@@ -25,16 +25,32 @@
                                     <constraint firstAttribute="height" constant="130" id="wtm-jT-CxB"/>
                                 </constraints>
                             </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-Fd-Tkw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LrK-Uo-SVv">
+                                <rect key="frame" x="75" y="492" width="225" height="37"/>
+                                <color key="pageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.73020119859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9YW-Gd-xMP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="15t-Lo-ouX"/>
+                            <constraint firstItem="9YW-Gd-xMP" firstAttribute="top" secondItem="LrK-Uo-SVv" secondAttribute="bottom" constant="8" id="93J-WT-vOe"/>
                             <constraint firstItem="9YW-Gd-xMP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TwD-jP-pRG"/>
+                            <constraint firstItem="LrK-Uo-SVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="UeJ-Fz-5q2"/>
+                            <constraint firstItem="bJB-Fd-Tkw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WMR-eg-q6b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LrK-Uo-SVv" secondAttribute="trailing" constant="75" id="WfS-yf-q2X"/>
+                            <constraint firstItem="bJB-Fd-Tkw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X2r-d4-dBx"/>
+                            <constraint firstItem="9YW-Gd-xMP" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" id="fAF-r6-keG"/>
                             <constraint firstItem="9YW-Gd-xMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oH9-nh-AoX"/>
+                            <constraint firstItem="bJB-Fd-Tkw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tjU-kc-KcU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="pageControl" destination="LrK-Uo-SVv" id="GjH-du-Oh4"/>
+                        <outlet property="scrollView" destination="bJB-Fd-Tkw" id="DSz-3d-tGE"/>
                         <outlet property="tableView" destination="9YW-Gd-xMP" id="wPO-fH-cDl"/>
                     </connections>
                 </viewController>
