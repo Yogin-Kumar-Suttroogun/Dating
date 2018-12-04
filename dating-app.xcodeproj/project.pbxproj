@@ -14,8 +14,6 @@
 		4749BACA21B3C511001989D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4749BAC821B3C511001989D6 /* LaunchScreen.storyboard */; };
 		4749BAD521B3C511001989D6 /* dating_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAD421B3C511001989D6 /* dating_appTests.swift */; };
 		4749BAE021B3C511001989D6 /* dating_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BADF21B3C511001989D6 /* dating_appUITests.swift */; };
-		4749BAF321B3CB59001989D6 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAF121B3CB59001989D6 /* LoginTableViewCell.swift */; };
-		4749BAF421B3CB59001989D6 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4749BAF221B3CB59001989D6 /* LoginTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +47,6 @@
 		4749BADB21B3C511001989D6 /* dating-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dating-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4749BADF21B3C511001989D6 /* dating_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dating_appUITests.swift; sourceTree = "<group>"; };
 		4749BAE121B3C511001989D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4749BAF121B3CB59001989D6 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
-		4749BAF221B3CB59001989D6 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +128,6 @@
 		4749BAED21B3C6EC001989D6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4749BAF121B3CB59001989D6 /* LoginTableViewCell.swift */,
 				4749BAC121B3C510001989D6 /* LoginController.swift */,
 			);
 			path = Controller;
@@ -143,7 +138,6 @@
 			children = (
 				4749BAC821B3C511001989D6 /* LaunchScreen.storyboard */,
 				4749BAC321B3C510001989D6 /* Main.storyboard */,
-				4749BAF221B3CB59001989D6 /* LoginTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,7 +264,6 @@
 				4749BACA21B3C511001989D6 /* LaunchScreen.storyboard in Resources */,
 				4749BAC721B3C511001989D6 /* Assets.xcassets in Resources */,
 				4749BAC521B3C510001989D6 /* Main.storyboard in Resources */,
-				4749BAF421B3CB59001989D6 /* LoginTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +290,6 @@
 			files = (
 				4749BAC221B3C510001989D6 /* LoginController.swift in Sources */,
 				4749BAC021B3C510001989D6 /* AppDelegate.swift in Sources */,
-				4749BAF321B3CB59001989D6 /* LoginTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

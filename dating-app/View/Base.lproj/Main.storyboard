@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9YW-Gd-xMP">
-                                <rect key="frame" x="0.0" y="537" width="375" height="130"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="wtm-jT-CxB"/>
-                                </constraints>
-                            </tableView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-Fd-Tkw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
                             </scrollView>
@@ -35,15 +28,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9YW-Gd-xMP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="15t-Lo-ouX"/>
-                            <constraint firstItem="9YW-Gd-xMP" firstAttribute="top" secondItem="LrK-Uo-SVv" secondAttribute="bottom" constant="8" id="93J-WT-vOe"/>
-                            <constraint firstItem="9YW-Gd-xMP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TwD-jP-pRG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="130" id="2o3-uH-qdb"/>
                             <constraint firstItem="LrK-Uo-SVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="UeJ-Fz-5q2"/>
                             <constraint firstItem="bJB-Fd-Tkw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WMR-eg-q6b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LrK-Uo-SVv" secondAttribute="trailing" constant="75" id="WfS-yf-q2X"/>
                             <constraint firstItem="bJB-Fd-Tkw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X2r-d4-dBx"/>
-                            <constraint firstItem="9YW-Gd-xMP" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" id="fAF-r6-keG"/>
-                            <constraint firstItem="9YW-Gd-xMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oH9-nh-AoX"/>
+                            <constraint firstItem="LrK-Uo-SVv" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="-45" id="ZfX-bA-yey"/>
                             <constraint firstItem="bJB-Fd-Tkw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tjU-kc-KcU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -51,7 +41,6 @@
                     <connections>
                         <outlet property="pageControl" destination="LrK-Uo-SVv" id="GjH-du-Oh4"/>
                         <outlet property="scrollView" destination="bJB-Fd-Tkw" id="DSz-3d-tGE"/>
-                        <outlet property="tableView" destination="9YW-Gd-xMP" id="wPO-fH-cDl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

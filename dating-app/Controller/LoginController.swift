@@ -9,13 +9,6 @@
 import UIKit
 
 class LoginController: UIViewController {
-    
-    @IBOutlet weak var tableView: UITableView! {
-        didSet {
-            tableView.dataSource = self
-            tableView.delegate = self
-        }
-    }
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -29,11 +22,7 @@ class LoginController: UIViewController {
         initialize()
     }
     
-    func initialize() {
-        loginOptions = ["Login with Facebook","Login with Phone number"]
-        let nibName = UINib(nibName: "LoginTableViewCell", bundle: nil)
-        tableView.register(nibName, forCellReuseIdentifier: "loginCell")
-        
+    func initialize() {        
         pageControl.numberOfPages = loginImg.count
         for index in 0..<loginImg.count {
             frame.origin.x = scrollView.frame.size.width * CGFloat(index)
@@ -46,21 +35,6 @@ class LoginController: UIViewController {
         
         scrollView.contentSize = CGSize(width: (scrollView.frame.size.width * CGFloat(loginImg.count)), height: scrollView.frame.size.height)
         scrollView.delegate = self
-    }
-}
-
-// MARK:- UITableViewDelegate, UITableViewDataSource
-extension LoginController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return loginOptions.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let loginCell = tableView.dequeueReusableCell(withIdentifier: "loginCell", for: indexPath) as? LoginTableViewCell {
-            loginCell.loginLbl.text = loginOptions[indexPath.row]
-            return loginCell
-        }
-        return UITableViewCell()
     }
 }
 
