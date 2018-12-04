@@ -25,20 +25,49 @@
                                 <rect key="frame" x="75" y="492" width="225" height="37"/>
                                 <color key="pageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.73020119859999999" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-Ui-45k">
+                                <rect key="frame" x="16" y="553" width="343" height="98"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-v3-Psq">
+                                        <rect key="frame" x="16" y="0.0" width="311" height="45"/>
+                                        <state key="normal" title="Login with Facebook">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-va-SlI">
+                                        <rect key="frame" x="16" y="53" width="311" height="45"/>
+                                        <state key="normal" title="Login with an email">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.73020119859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="peX-va-SlI" firstAttribute="leading" secondItem="2EH-Ui-45k" secondAttribute="leading" constant="16" id="07N-4b-dK2"/>
+                                    <constraint firstAttribute="trailing" secondItem="aDf-v3-Psq" secondAttribute="trailing" constant="16" id="5ud-in-yOF"/>
+                                    <constraint firstAttribute="trailing" secondItem="peX-va-SlI" secondAttribute="trailing" constant="16" id="dHQ-MT-n5t"/>
+                                    <constraint firstItem="aDf-v3-Psq" firstAttribute="leading" secondItem="2EH-Ui-45k" secondAttribute="leading" constant="16" id="qq7-6t-zmt"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="130" id="2o3-uH-qdb"/>
+                            <constraint firstItem="2EH-Ui-45k" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="16" id="Eq7-J6-Qy1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2EH-Ui-45k" secondAttribute="bottom" constant="16" id="TjZ-04-ONn"/>
                             <constraint firstItem="LrK-Uo-SVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="UeJ-Fz-5q2"/>
                             <constraint firstItem="bJB-Fd-Tkw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WMR-eg-q6b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LrK-Uo-SVv" secondAttribute="trailing" constant="75" id="WfS-yf-q2X"/>
                             <constraint firstItem="bJB-Fd-Tkw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X2r-d4-dBx"/>
                             <constraint firstItem="LrK-Uo-SVv" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="-45" id="ZfX-bA-yey"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2EH-Ui-45k" secondAttribute="trailing" constant="16" id="h62-5k-mX0"/>
+                            <constraint firstItem="2EH-Ui-45k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rX7-yo-LY3"/>
                             <constraint firstItem="bJB-Fd-Tkw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tjU-kc-KcU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="fbBtn" destination="aDf-v3-Psq" id="gwB-Ea-I6m"/>
+                        <outlet property="mailBtn" destination="peX-va-SlI" id="7rM-vA-013"/>
                         <outlet property="pageControl" destination="LrK-Uo-SVv" id="GjH-du-Oh4"/>
                         <outlet property="scrollView" destination="bJB-Fd-Tkw" id="DSz-3d-tGE"/>
                     </connections>

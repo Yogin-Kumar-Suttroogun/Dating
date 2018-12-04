@@ -11,6 +11,8 @@ import UIKit
 class LoginController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var fbBtn: UIButton!
+    @IBOutlet weak var mailBtn: UIButton!
     
     var loginOptions = [String]()
     var loginImg: [String] = ["0","1","2"]
@@ -35,6 +37,12 @@ class LoginController: UIViewController {
         
         scrollView.contentSize = CGSize(width: (scrollView.frame.size.width * CGFloat(loginImg.count)), height: scrollView.frame.size.height)
         scrollView.delegate = self
+        
+        fbBtn.layer.borderWidth = 2
+        fbBtn.layer.borderColor = UIColor.blue.cgColor
+        
+        mailBtn.layer.borderWidth = 2
+        mailBtn.layer.borderColor = UIColor.red.cgColor
     }
 }
 
