@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>41070107546-p8cnmc7kr7v3dhbaf4o1k98ke7qo23ch.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.41070107546-p8cnmc7kr7v3dhbaf4o1k98ke7qo23ch</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWLUYD-oJs-m9Lu6OJ7UsQu1SP9_yGMSw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>41070107546</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.swift.dating-app</string>
+	<key>PROJECT_ID</key>
+	<string>dating-d8400</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dating-d8400.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:41070107546:ios:2ef5e235691efb32</string>
+	<key>DATABASE_URL</key>
+	<string>https://dating-d8400.firebaseio.com</string>
+</dict>
+</plist>
