@@ -20,7 +20,6 @@
 		D3DE618D21B7A18000411928 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE618B21B7A18000411928 /* MaterialView.swift */; };
 		D3DE619021B7A18D00411928 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE618F21B7A18D00411928 /* Validator.swift */; };
 		D3DE619221B7A27900411928 /* SignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE619121B7A27900411928 /* SignController.swift */; };
-		D3DE61B421B7FA9800411928 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE61B321B7FA9800411928 /* CustomSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		D3DE618B21B7A18000411928 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		D3DE618F21B7A18D00411928 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		D3DE619121B7A27900411928 /* SignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignController.swift; sourceTree = "<group>"; };
-		D3DE61B321B7FA9800411928 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +142,6 @@
 			children = (
 				4749BAC121B3C510001989D6 /* LoginController.swift */,
 				D3DE619121B7A27900411928 /* SignController.swift */,
-				D3DE61B321B7FA9800411928 /* CustomSegmentedControl.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,7 +314,6 @@
 				D3DE619021B7A18D00411928 /* Validator.swift in Sources */,
 				4749BAC021B3C510001989D6 /* AppDelegate.swift in Sources */,
 				D3DE618A21B7A13800411928 /* DesignableButton.swift in Sources */,
-				D3DE61B421B7FA9800411928 /* CustomSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
