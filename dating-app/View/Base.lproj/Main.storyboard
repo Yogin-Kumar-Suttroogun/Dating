@@ -30,13 +30,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-v3-Psq">
                                         <rect key="frame" x="16" y="0.0" width="311" height="45"/>
                                         <state key="normal" title="Login with Facebook">
-                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.63059182363013699" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-va-SlI">
                                         <rect key="frame" x="16" y="53" width="311" height="45"/>
                                         <state key="normal" title="Login with an email">
-                                            <color key="titleColor" red="1" green="0.14901960784313725" blue="0.0" alpha="0.48630136983287664" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.73020119859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
