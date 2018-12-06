@@ -35,6 +35,9 @@ class CustomSegmentedControl: UIView {
     
     func updateView() {
         buttons.removeAll()
+        subviews.forEach { (view) in
+            view.removeFromSuperview()
+        }
         
         let buttonTitles = commaSeparatedButtonTitles.components(separatedBy: ",")
         for buttonTitle in buttonTitles {
@@ -43,7 +46,17 @@ class CustomSegmentedControl: UIView {
             buttons.append(button)
         }
         
+        let sv = UIStackView(arrangedSubviews: buttons)
+        sv.axis = .horizontal
+        sv.alignment = .fill
+        sv.distribution = .fillProportionally
+        addSubview(sv)
         
+        sv.translatesAutoresizingMaskIntoConstraints = false
+        sv.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        sv.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        sv.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        sv.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     }
     
     override func draw(_ rect: CGRect) {
