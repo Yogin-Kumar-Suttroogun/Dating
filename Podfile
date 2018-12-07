@@ -8,6 +8,7 @@ target 'dating-app' do
   # Pods for dating-app
   pod 'Firebase/Core'
   pod 'FacebookSDK'
+  pod 'RAMAnimatedTabBarController'
 
   target 'dating-appTests' do
     inherit! :search_paths

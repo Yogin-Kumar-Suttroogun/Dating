@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JjO-Gc-ihz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yxj-xf-m0v">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -230,13 +230,255 @@
             </objects>
             <point key="canvasLocation" x="933.60000000000002" y="132.68365817091455"/>
         </scene>
+        <!--Chat Controller-->
+        <scene sceneID="cmJ-Ma-Xdg">
+            <objects>
+                <viewController id="i0Z-NS-YhJ" customClass="ChatController" customModule="dating_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s0z-WH-psX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OGT-x1-JmC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="caddie_listedecourses_orange" id="MpF-vL-AbN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHo-6i-TtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="1244"/>
+        </scene>
+        <!--Profile Controller-->
+        <scene sceneID="5UY-X7-hxk">
+            <objects>
+                <viewController id="cm9-Jj-aOA" customClass="ProfileController" customModule="dating_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fbZ-JL-GsM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Npm-22-czn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="provisions_listedecourses_orange" id="5X4-HO-Z4g" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textFontSize">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="Ecs-kL-tRG" id="91h-Mz-xCJ"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6U-vK-EOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Ecs-kL-tRG" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="579"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="cTs-eV-LOF">
+            <objects>
+                <tabBarController id="YpT-Pu-Zz6" customClass="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VYf-it-6pw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cm9-Jj-aOA" kind="relationship" relationship="viewControllers" id="uVH-Tl-Mr2"/>
+                        <segue destination="i0Z-NS-YhJ" kind="relationship" relationship="viewControllers" id="ODS-Tq-eBb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qb-NF-LCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="854"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G9J-xB-s0L">
+            <objects>
+                <viewController id="yxj-xf-m0v" customClass="ViewController" customModule="testingTinderSwipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="abc-O6-hbg" customClass="GradientView" customModule="testingTinderSwipe" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="jqz-oR-RWb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzt-9S-m2p" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-rN-9Ac" customClass="EmojiRateView" customModule="testingTinderSwipe" customModuleProvider="target">
+                                        <rect key="frame" x="127.5" y="15" width="120" height="120"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="7pE-Mm-DAj"/>
+                                            <constraint firstAttribute="width" constant="120" id="9Sp-bW-G7H"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rateLineWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rateDynamicColor" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rateMouthWidth">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rateMouthVerticalPosition">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rateShowEyes" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rateEyeWidth">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rateEyeVerticalPosition">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rateValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rateColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="MXO-qd-UP7"/>
+                                    <constraint firstItem="aQZ-rN-9Ac" firstAttribute="centerX" secondItem="uzt-9S-m2p" secondAttribute="centerX" id="PqZ-A7-Erk"/>
+                                    <constraint firstItem="aQZ-rN-9Ac" firstAttribute="centerY" secondItem="uzt-9S-m2p" secondAttribute="centerY" id="yDg-Hb-UhY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLk-tf-CrA" userLabel="SwipeView">
+                                <rect key="frame" x="15" y="190" width="345" height="377"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Its Hammer Time!!!!!!!   🏎 😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Eb-LB-Nkp">
+                                        <rect key="frame" x="58.5" y="178" width="228.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2Eb-LB-Nkp" firstAttribute="centerY" secondItem="FLk-tf-CrA" secondAttribute="centerY" id="Doc-mC-OkP"/>
+                                    <constraint firstItem="2Eb-LB-Nkp" firstAttribute="centerX" secondItem="FLk-tf-CrA" secondAttribute="centerX" id="phC-jp-XRy"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zE2-IH-bda" userLabel="BottomNav">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-Dn-Elt">
+                                        <rect key="frame" x="280" y="12.5" width="75" height="75"/>
+                                        <state key="normal" image="yesButton"/>
+                                        <state key="highlighted" image="yesButtonSelected"/>
+                                        <connections>
+                                            <action selector="LikeButtonAction:" destination="yxj-xf-m0v" eventType="touchUpInside" id="d7o-xF-Wha"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaF-G2-Bop">
+                                        <rect key="frame" x="150" y="12.5" width="75" height="75"/>
+                                        <state key="normal" image="undoButton"/>
+                                        <state key="highlighted" image="undoSelected"/>
+                                        <connections>
+                                            <action selector="undoButtonAction:" destination="yxj-xf-m0v" eventType="touchUpInside" id="wHS-Y1-Eg2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oD5-z8-Jhn">
+                                        <rect key="frame" x="20" y="12.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="bnE-7P-PSu"/>
+                                            <constraint firstAttribute="height" constant="75" id="t9t-vC-Hlf"/>
+                                        </constraints>
+                                        <state key="normal" image="noButton"/>
+                                        <state key="selected" image="noButton_Selected"/>
+                                        <state key="highlighted" image="noButton_Selected"/>
+                                        <connections>
+                                            <action selector="disLikeButtonAction:" destination="yxj-xf-m0v" eventType="touchUpInside" id="kyc-mu-bHN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ibt-Dn-Elt" firstAttribute="width" secondItem="zaF-G2-Bop" secondAttribute="width" id="0ID-2o-Scs"/>
+                                    <constraint firstItem="oD5-z8-Jhn" firstAttribute="leading" secondItem="zE2-IH-bda" secondAttribute="leading" constant="20" id="7lT-3y-6it"/>
+                                    <constraint firstItem="oD5-z8-Jhn" firstAttribute="centerY" secondItem="zE2-IH-bda" secondAttribute="centerY" id="Bnp-nK-kSf"/>
+                                    <constraint firstItem="ibt-Dn-Elt" firstAttribute="height" secondItem="zaF-G2-Bop" secondAttribute="height" id="DaO-gE-AVx"/>
+                                    <constraint firstItem="ibt-Dn-Elt" firstAttribute="top" secondItem="zaF-G2-Bop" secondAttribute="top" id="IXK-Nf-VAN"/>
+                                    <constraint firstItem="zaF-G2-Bop" firstAttribute="height" secondItem="oD5-z8-Jhn" secondAttribute="height" id="UZw-ta-MqG"/>
+                                    <constraint firstAttribute="height" constant="100" id="gi7-i3-xMg"/>
+                                    <constraint firstItem="zaF-G2-Bop" firstAttribute="top" secondItem="oD5-z8-Jhn" secondAttribute="top" id="hno-c7-rxY"/>
+                                    <constraint firstItem="zaF-G2-Bop" firstAttribute="centerX" secondItem="zE2-IH-bda" secondAttribute="centerX" id="rBh-D6-euP"/>
+                                    <constraint firstItem="zaF-G2-Bop" firstAttribute="width" secondItem="oD5-z8-Jhn" secondAttribute="width" id="skw-DP-qVm"/>
+                                    <constraint firstAttribute="trailing" secondItem="ibt-Dn-Elt" secondAttribute="trailing" constant="20" id="xDg-dN-HyC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.30588235289999999" blue="0.43529411759999997" alpha="0.85788952460000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uzt-9S-m2p" firstAttribute="trailing" secondItem="CFn-mN-EuH" secondAttribute="trailing" id="Ci7-tr-rwM"/>
+                            <constraint firstAttribute="trailing" secondItem="jqz-oR-RWb" secondAttribute="trailing" id="Dxu-nu-gDg"/>
+                            <constraint firstItem="uzt-9S-m2p" firstAttribute="top" secondItem="CFn-mN-EuH" secondAttribute="top" id="JIN-FW-uut"/>
+                            <constraint firstItem="CFn-mN-EuH" firstAttribute="bottom" secondItem="jqz-oR-RWb" secondAttribute="bottom" id="LVm-QX-EoJ"/>
+                            <constraint firstItem="zE2-IH-bda" firstAttribute="trailing" secondItem="CFn-mN-EuH" secondAttribute="trailing" id="QrK-Fj-p8w"/>
+                            <constraint firstItem="CFn-mN-EuH" firstAttribute="bottom" secondItem="zE2-IH-bda" secondAttribute="bottom" id="R25-WK-fdf"/>
+                            <constraint firstItem="FLk-tf-CrA" firstAttribute="top" secondItem="uzt-9S-m2p" secondAttribute="bottom" constant="20" id="ZBr-sc-hoS"/>
+                            <constraint firstItem="uzt-9S-m2p" firstAttribute="leading" secondItem="CFn-mN-EuH" secondAttribute="leading" id="fUu-KC-9zJ"/>
+                            <constraint firstItem="zE2-IH-bda" firstAttribute="top" secondItem="FLk-tf-CrA" secondAttribute="bottom" id="mRw-Xg-2w1"/>
+                            <constraint firstItem="zE2-IH-bda" firstAttribute="leading" secondItem="CFn-mN-EuH" secondAttribute="leading" id="pTT-vC-6hF"/>
+                            <constraint firstItem="jqz-oR-RWb" firstAttribute="top" secondItem="CFn-mN-EuH" secondAttribute="top" id="pc0-oc-p7W"/>
+                            <constraint firstItem="FLk-tf-CrA" firstAttribute="leading" secondItem="CFn-mN-EuH" secondAttribute="leading" constant="15" id="qdc-4K-sLU"/>
+                            <constraint firstItem="CFn-mN-EuH" firstAttribute="trailing" secondItem="FLk-tf-CrA" secondAttribute="trailing" constant="15" id="tSS-tl-OY0"/>
+                            <constraint firstItem="jqz-oR-RWb" firstAttribute="leading" secondItem="CFn-mN-EuH" secondAttribute="leading" id="uXN-Az-nbc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CFn-mN-EuH"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.79607843140000001" green="0.20784313730000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.74117647060000003" green="0.2470588235" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="buttonUndo" destination="zaF-G2-Bop" id="efh-Cl-tGX"/>
+                        <outlet property="emojiView" destination="aQZ-rN-9Ac" id="jzi-9M-Se7"/>
+                        <outlet property="viewActions" destination="zE2-IH-bda" id="gUw-eR-vzQ"/>
+                        <outlet property="viewTinderBackGround" destination="FLk-tf-CrA" id="tSP-hI-yLB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reV-Pj-K2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="-956"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="1" width="564" height="846"/>
+        <image name="1" width="1409" height="1762"/>
         <image name="bg" width="800" height="1280"/>
         <image name="birthday" width="204.80000305175781" height="204.80000305175781"/>
+        <image name="caddie_listedecourses_orange" width="32" height="32"/>
         <image name="gender" width="204.80000305175781" height="204.80000305175781"/>
+        <image name="noButton" width="75" height="75"/>
+        <image name="noButton_Selected" width="75" height="75"/>
         <image name="password" width="256" height="256"/>
+        <image name="provisions_listedecourses_orange" width="32" height="32"/>
+        <image name="undoButton" width="75" height="75"/>
+        <image name="undoSelected" width="75" height="75"/>
         <image name="user" width="256" height="256"/>
+        <image name="yesButton" width="75" height="75"/>
+        <image name="yesButtonSelected" width="75" height="75"/>
     </resources>
 </document>
