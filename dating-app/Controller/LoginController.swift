@@ -15,7 +15,7 @@ class LoginController: UIViewController {
     @IBOutlet weak var mailBtn: UIButton!
     
     var loginOptions = [String]()
-    var loginImg: [String] = ["0","1","2"]
+    var loginImg: [String] = ["0-login","1-login","2-login"]
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
     
     override func viewDidLoad() {

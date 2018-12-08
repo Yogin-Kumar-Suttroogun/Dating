@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yxj-xf-m0v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,6 +32,9 @@
                                         <state key="normal" title="Login with Facebook">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.63059182363013699" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="JjO-Gc-ihz" kind="show" id="xk3-Q3-KkY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-va-SlI">
                                         <rect key="frame" x="16" y="53" width="311" height="45"/>
@@ -108,7 +111,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="register:" destination="JjO-Gc-ihz" eventType="touchUpInside" id="pIi-AU-5oh"/>
+                                    <segue destination="yxj-xf-m0v" kind="show" id="6ni-En-Kr6"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFo-cO-XTt" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
@@ -297,8 +300,8 @@
         <!--View Controller-->
         <scene sceneID="G9J-xB-s0L">
             <objects>
-                <viewController id="yxj-xf-m0v" customClass="ViewController" customModule="testingTinderSwipe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="abc-O6-hbg" customClass="GradientView" customModule="testingTinderSwipe" customModuleProvider="target">
+                <viewController id="yxj-xf-m0v" customClass="ViewController" customModule="dating_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="abc-O6-hbg" customClass="GradientView" customModule="dating_app" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -308,7 +311,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzt-9S-m2p" userLabel="TopView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="150"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-rN-9Ac" customClass="EmojiRateView" customModule="testingTinderSwipe" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-rN-9Ac" customClass="EmojiRateView" customModule="dating_app" customModuleProvider="target">
                                         <rect key="frame" x="127.5" y="15" width="120" height="120"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -462,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reV-Pj-K2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="-956"/>
+            <point key="canvasLocation" x="1889" y="-171"/>
         </scene>
     </scenes>
     <resources>
