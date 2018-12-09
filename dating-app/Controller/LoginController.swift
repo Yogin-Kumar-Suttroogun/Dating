@@ -30,7 +30,7 @@ class LoginController: UIViewController {
             frame.origin.x = scrollView.frame.size.width * CGFloat(index)
             frame.size = scrollView.frame.size
             
-            let imgView = UIImageView(frame: frame)
+            let imgView = UIGradientImageView(frame: frame)
             imgView.image = UIImage(named: loginImg[index])
             self.scrollView.addSubview(imgView)
         }
