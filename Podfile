@@ -7,7 +7,9 @@ target 'dating-app' do
 
   # Pods for dating-app
   pod 'Firebase/Core'
-  pod 'FacebookSDK'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
   pod 'RAMAnimatedTabBarController'
 
   target 'dating-appTests' do

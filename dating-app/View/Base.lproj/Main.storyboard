@@ -25,23 +25,22 @@
                                 <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-Ui-45k">
-                                <rect key="frame" x="16" y="553" width="343" height="98"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-Ui-45k">
+                                <rect key="frame" x="16" y="562" width="343" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-v3-Psq">
-                                        <rect key="frame" x="16" y="0.0" width="311" height="45"/>
-                                        <state key="normal" title="Login with Facebook">
-                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.63059182363013699" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="16" y="0.0" width="311" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.73020119859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Login with email">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="JjO-Gc-ihz" kind="show" id="xk3-Q3-KkY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-va-SlI">
-                                        <rect key="frame" x="16" y="53" width="311" height="45"/>
-                                        <state key="normal" title="Login with an email">
-                                            <color key="titleColor" red="1" green="0.14901960784313725" blue="0.0" alpha="0.48630136983287664" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-va-SlI" customClass="FBSDKLoginButton">
+                                        <rect key="frame" x="16" y="45" width="311" height="35"/>
+                                        <state key="normal" title="Login with an facebook"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -55,8 +54,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="130" id="2o3-uH-qdb"/>
-                            <constraint firstItem="2EH-Ui-45k" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="16" id="Eq7-J6-Qy1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2EH-Ui-45k" secondAttribute="bottom" constant="16" id="TjZ-04-ONn"/>
+                            <constraint firstItem="2EH-Ui-45k" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="25" id="Eq7-J6-Qy1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2EH-Ui-45k" secondAttribute="bottom" constant="25" id="TjZ-04-ONn"/>
                             <constraint firstItem="LrK-Uo-SVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="UeJ-Fz-5q2"/>
                             <constraint firstItem="bJB-Fd-Tkw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WMR-eg-q6b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LrK-Uo-SVv" secondAttribute="trailing" constant="75" id="WfS-yf-q2X"/>

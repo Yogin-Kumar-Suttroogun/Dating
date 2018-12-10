@@ -15,7 +15,6 @@
 		4749BACA21B3C511001989D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4749BAC821B3C511001989D6 /* LaunchScreen.storyboard */; };
 		4749BAD521B3C511001989D6 /* dating_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAD421B3C511001989D6 /* dating_appTests.swift */; };
 		4749BAE021B3C511001989D6 /* dating_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BADF21B3C511001989D6 /* dating_appUITests.swift */; };
-		47AFF53221BCE5E800998C22 /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AFF53121BCE5E800998C22 /* GradientImageView.swift */; };
 		4D4BE5E53E85BB5F48C9C505 /* Pods_dating_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E1F4D759B69FF75FB6F99F /* Pods_dating_appTests.framework */; };
 		C680839FA02B53BA5982E584 /* Pods_dating_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A23463C976DB805ADD3DC0 /* Pods_dating_app.framework */; };
 		D307151021BA58D100D7204D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307150F21BA58D100D7204D /* ViewController.swift */; };
@@ -26,6 +25,7 @@
 		D365A6B921B92E8400B21D3D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365A6B821B92E8400B21D3D /* MainTabBarController.swift */; };
 		D365A6BB21B92EF100B21D3D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365A6BA21B92EF100B21D3D /* ProfileController.swift */; };
 		D365A6BD21B92EFF00B21D3D /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365A6BC21B92EFF00B21D3D /* ChatController.swift */; };
+		D39B240221BE3D24006C738D /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B240121BE3D24006C738D /* GradientImageView.swift */; };
 		D3DE618621B7A07D00411928 /* Affectionately_Yours.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3DE618521B7A07D00411928 /* Affectionately_Yours.ttf */; };
 		D3DE618821B7A13000411928 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE618721B7A13000411928 /* DesignableTextField.swift */; };
 		D3DE618A21B7A13800411928 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE618921B7A13800411928 /* DesignableButton.swift */; };
@@ -66,7 +66,6 @@
 		4749BADB21B3C511001989D6 /* dating-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dating-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4749BADF21B3C511001989D6 /* dating_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dating_appUITests.swift; sourceTree = "<group>"; };
 		4749BAE121B3C511001989D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47AFF53121BCE5E800998C22 /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
 		5A9398F96F1C82E33DA47BF7 /* Pods-dating-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-app.debug.xcconfig"; path = "Target Support Files/Pods-dating-app/Pods-dating-app.debug.xcconfig"; sourceTree = "<group>"; };
 		66F90FF8148C0D238D719F37 /* Pods-dating-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-app.release.xcconfig"; path = "Target Support Files/Pods-dating-app/Pods-dating-app.release.xcconfig"; sourceTree = "<group>"; };
 		69A3A886C0F0F3FB00711E38 /* Pods_dating_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dating_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +80,7 @@
 		D365A6B821B92E8400B21D3D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D365A6BA21B92EF100B21D3D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		D365A6BC21B92EFF00B21D3D /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		D39B240121BE3D24006C738D /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientImageView.swift; path = "dating-app/Resources/GradientImageView.swift"; sourceTree = SOURCE_ROOT; };
 		D3DE618521B7A07D00411928 /* Affectionately_Yours.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Affectionately_Yours.ttf; sourceTree = "<group>"; };
 		D3DE618721B7A13000411928 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		D3DE618921B7A13800411928 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -199,7 +199,6 @@
 		4749BAED21B3C6EC001989D6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				47AFF53121BCE5E800998C22 /* GradientImageView.swift */,
 				D307151521BA597200D7204D /* GradientView.swift */,
 				D307151321BA596B00D7204D /* EmojiRateView.swift */,
 				D307151121BA596400D7204D /* TinderCard.swift */,
@@ -232,6 +231,7 @@
 		4749BAF021B3C722001989D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D39B240121BE3D24006C738D /* GradientImageView.swift */,
 				D3DE618F21B7A18D00411928 /* Validator.swift */,
 				D3DE618B21B7A18000411928 /* MaterialView.swift */,
 				D3DE618921B7A13800411928 /* DesignableButton.swift */,
@@ -408,6 +408,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-dating-app/Pods-dating-app-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -418,6 +420,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -489,9 +493,9 @@
 				D3DE619221B7A27900411928 /* SignController.swift in Sources */,
 				D365A6BB21B92EF100B21D3D /* ProfileController.swift in Sources */,
 				D3DE619021B7A18D00411928 /* Validator.swift in Sources */,
-				47AFF53221BCE5E800998C22 /* GradientImageView.swift in Sources */,
 				4749BAC021B3C510001989D6 /* AppDelegate.swift in Sources */,
 				D3DE618A21B7A13800411928 /* DesignableButton.swift in Sources */,
+				D39B240221BE3D24006C738D /* GradientImageView.swift in Sources */,
 				D307151221BA596400D7204D /* TinderCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

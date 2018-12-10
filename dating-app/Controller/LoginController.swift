@@ -38,11 +38,11 @@ class LoginController: UIViewController {
         scrollView.contentSize = CGSize(width: (scrollView.frame.size.width * CGFloat(loginImg.count)), height: scrollView.frame.size.height)
         scrollView.delegate = self
         
-        fbBtn.layer.borderWidth = 1
-        fbBtn.layer.borderColor = UIColor.init(red: 20/255, green: 132/255, blue: 255/255, alpha: 1).cgColor
-        
-        mailBtn.layer.borderWidth = 1
-        mailBtn.layer.borderColor = UIColor.init(red: 255/255, green: 55/255, blue: 20/255, alpha: 1).cgColor
+//        fbBtn.layer.borderWidth = 1
+//        fbBtn.layer.borderColor = UIColor.init(red: 20/255, green: 132/255, blue: 255/255, alpha: 1).cgColor
+//        
+//        mailBtn.layer.borderWidth = 1
+//        mailBtn.layer.borderColor = UIColor.init(red: 255/255, green: 55/255, blue: 20/255, alpha: 1).cgColor
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
