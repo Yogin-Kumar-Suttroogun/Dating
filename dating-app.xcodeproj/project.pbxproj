@@ -80,7 +80,7 @@
 		D365A6B821B92E8400B21D3D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D365A6BA21B92EF100B21D3D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		D365A6BC21B92EFF00B21D3D /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
-		D39B240121BE3D24006C738D /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientImageView.swift; path = "dating-app/Resources/GradientImageView.swift"; sourceTree = SOURCE_ROOT; };
+		D39B240121BE3D24006C738D /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientImageView.swift; path = "dating-app/Resources/Design/GradientImageView.swift"; sourceTree = SOURCE_ROOT; };
 		D3DE618521B7A07D00411928 /* Affectionately_Yours.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Affectionately_Yours.ttf; sourceTree = "<group>"; };
 		D3DE618721B7A13000411928 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		D3DE618921B7A13800411928 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -231,15 +231,31 @@
 		4749BAF021B3C722001989D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D39B240121BE3D24006C738D /* GradientImageView.swift */,
+				D39B249E21BF96A9006C738D /* Fonts */,
+				D39B249D21BF967E006C738D /* Design */,
 				D3DE618F21B7A18D00411928 /* Validator.swift */,
-				D3DE618B21B7A18000411928 /* MaterialView.swift */,
-				D3DE618921B7A13800411928 /* DesignableButton.swift */,
-				D3DE618721B7A13000411928 /* DesignableTextField.swift */,
-				D3DE618521B7A07D00411928 /* Affectionately_Yours.ttf */,
 				4749BAC621B3C511001989D6 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D39B249D21BF967E006C738D /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D3DE618B21B7A18000411928 /* MaterialView.swift */,
+				D3DE618721B7A13000411928 /* DesignableTextField.swift */,
+				D3DE618921B7A13800411928 /* DesignableButton.swift */,
+				D39B240121BE3D24006C738D /* GradientImageView.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		D39B249E21BF96A9006C738D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D3DE618521B7A07D00411928 /* Affectionately_Yours.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
