@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Its Hammer Time!!!!!!!   🏎 😎"; ObjectID = "2Eb-LB-Nkp"; */
+"2Eb-LB-Nkp.text" = "Its Hammer Time!!!!!!!   🏎 😎";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Gz7-Gf-b6M"; */
+"Gz7-Gf-b6M.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Location"; ObjectID = "HeH-4H-n5U"; */
+"HeH-4H-n5U.placeholder" = "Location";
+
+/* Class = "UILabel"; text = "Sarah Willams"; ObjectID = "Hqq-ZD-QYJ"; */
+"Hqq-ZD-QYJ.text" = "Sarah Willams";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "INz-2Q-bf7"; */
+"INz-2Q-bf7.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "Graphic Designer"; ObjectID = "KLV-gN-nU9"; */
+"KLV-gN-nU9.text" = "Graphic Designer";
+
+/* Class = "UITextField"; placeholder = "Gender"; ObjectID = "LFo-cO-XTt"; */
+"LFo-cO-XTt.placeholder" = "Gender";
+
+/* Class = "UITextView"; text = "Freelancer UI Designer focusing on website design & development, and application design."; ObjectID = "Uyu-EU-DDx"; */
+"Uyu-EU-DDx.text" = "Freelancer UI Designer focusing on website design & development, and application design.";
+
+/* Class = "UITextField"; placeholder = "Interested in"; ObjectID = "YC9-IT-UC6"; */
+"YC9-IT-UC6.placeholder" = "Interested in";
+
+/* Class = "UIButton"; normalTitle = "Login with email"; ObjectID = "aDf-v3-Psq"; */
+"aDf-v3-Psq.normalTitle" = "Login with email";
+
+/* Class = "UITextField"; placeholder = "Date of birth"; ObjectID = "gU6-bG-YTr"; */
+"gU6-bG-YTr.placeholder" = "Date of birth";
+
+/* Class = "UIButton"; normalTitle = "Login with an facebook"; ObjectID = "peX-va-SlI"; */
+"peX-va-SlI.normalTitle" = "Login with an facebook";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "wBU-ee-DLv"; */
+"wBU-ee-DLv.placeholder" = "Full Name";

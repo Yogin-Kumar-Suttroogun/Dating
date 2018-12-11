@@ -24,7 +24,7 @@ class LoginController: UIViewController {
         initialize()
     }
     
-    func initialize() {        
+    func initialize() {
         pageControl.numberOfPages = loginImg.count
         for index in 0..<loginImg.count {
             frame.origin.x = scrollView.frame.size.width * CGFloat(index)
@@ -37,6 +37,9 @@ class LoginController: UIViewController {
         
         scrollView.contentSize = CGSize(width: (scrollView.frame.size.width * CGFloat(loginImg.count)), height: scrollView.frame.size.height)
         scrollView.delegate = self
+        
+//        Localizing the app
+        mailBtn.setTitle(NSLocalizedString("login.email", comment: ""), for: .normal)
         
 //        fbBtn.layer.borderWidth = 1
 //        fbBtn.layer.borderColor = UIColor.init(red: 20/255, green: 132/255, blue: 255/255, alpha: 1).cgColor

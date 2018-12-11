@@ -35,7 +35,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="JjO-Gc-ihz" kind="show" id="xk3-Q3-KkY"/>
+                                            <segue destination="JjO-Gc-ihz" kind="show" id="1WJ-6K-wSH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-va-SlI" customClass="FBSDKLoginButton">
@@ -68,8 +68,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="fbBtn" destination="aDf-v3-Psq" id="gwB-Ea-I6m"/>
-                        <outlet property="mailBtn" destination="peX-va-SlI" id="7rM-vA-013"/>
+                        <outlet property="fbBtn" destination="peX-va-SlI" id="xEp-Pp-yvK"/>
+                        <outlet property="mailBtn" destination="aDf-v3-Psq" id="9rk-z5-l2m"/>
                         <outlet property="pageControl" destination="LrK-Uo-SVv" id="GjH-du-Oh4"/>
                         <outlet property="scrollView" destination="bJB-Fd-Tkw" id="DSz-3d-tGE"/>
                     </connections>

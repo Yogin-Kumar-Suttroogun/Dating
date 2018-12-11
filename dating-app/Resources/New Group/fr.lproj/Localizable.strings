@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  dating-app
+
+  Created by Yogin Kumar SUTTROOGUN on 11/12/2018.
+  Copyright © 2018 SUTTROOGUN Yogin Kumar. All rights reserved.
+*/
+
+"login.email" = "Continuer avec email";
