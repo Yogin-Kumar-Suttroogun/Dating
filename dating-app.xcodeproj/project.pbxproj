@@ -417,7 +417,6 @@
 		4749BAED21B3C6EC001989D6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D307151521BA597200D7204D /* GradientView.swift */,
 				D307151321BA596B00D7204D /* EmojiRateView.swift */,
 				D307151121BA596400D7204D /* TinderCard.swift */,
 				4749BAC121B3C510001989D6 /* LoginController.swift */,
@@ -461,6 +460,7 @@
 		D39B249D21BF967E006C738D /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				D307151521BA597200D7204D /* GradientView.swift */,
 				D3DE618B21B7A18000411928 /* MaterialView.swift */,
 				D3DE618721B7A13000411928 /* DesignableTextField.swift */,
 				D3DE618921B7A13800411928 /* DesignableButton.swift */,
