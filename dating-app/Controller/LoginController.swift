@@ -48,8 +48,20 @@ class LoginController: UIViewController {
 //        mailBtn.layer.borderColor = UIColor.init(red: 255/255, green: 55/255, blue: 20/255, alpha: 1).cgColor
     }
     
+//    Changing the top view text
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    
+    @IBAction func loginEmail(_ sender: Any) {
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "newViewController") as! SignController
+//        self.present(newViewController, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 }
 
