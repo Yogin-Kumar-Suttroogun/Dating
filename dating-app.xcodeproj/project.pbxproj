@@ -22,14 +22,8 @@
 		4749BAE021B3C511001989D6 /* dating_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BADF21B3C511001989D6 /* dating_appUITests.swift */; };
 		4D4BE5E53E85BB5F48C9C505 /* Pods_dating_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E1F4D759B69FF75FB6F99F /* Pods_dating_appTests.framework */; };
 		C680839FA02B53BA5982E584 /* Pods_dating_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A23463C976DB805ADD3DC0 /* Pods_dating_app.framework */; };
-		D307151021BA58D100D7204D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307150F21BA58D100D7204D /* ViewController.swift */; };
-		D307151221BA596400D7204D /* TinderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307151121BA596400D7204D /* TinderCard.swift */; };
-		D307151421BA596B00D7204D /* EmojiRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307151321BA596B00D7204D /* EmojiRateView.swift */; };
 		D307151621BA597200D7204D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307151521BA597200D7204D /* GradientView.swift */; };
 		D365A6B721B9011A00B21D3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D365A6B621B9011A00B21D3D /* GoogleService-Info.plist */; };
-		D365A6B921B92E8400B21D3D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365A6B821B92E8400B21D3D /* MainTabBarController.swift */; };
-		D365A6BB21B92EF100B21D3D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365A6BA21B92EF100B21D3D /* ProfileController.swift */; };
-		D365A6BD21B92EFF00B21D3D /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365A6BC21B92EFF00B21D3D /* ChatController.swift */; };
 		D39B240221BE3D24006C738D /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B240121BE3D24006C738D /* GradientImageView.swift */; };
 		D39B24C521BFA5D2006C738D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39B24C721BFA5D2006C738D /* Localizable.strings */; };
 		D39B266821BFB180006C738D /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B25DF21BFB180006C738D /* Array+Extensions.swift */; };
@@ -189,14 +183,8 @@
 		73A23463C976DB805ADD3DC0 /* Pods_dating_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dating_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73E37548304C62EB9683633 /* Pods-dating-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-appUITests.debug.xcconfig"; path = "Target Support Files/Pods-dating-appUITests/Pods-dating-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9872616F02D73BE21963791 /* Pods-dating-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-appTests.release.xcconfig"; path = "Target Support Files/Pods-dating-appTests/Pods-dating-appTests.release.xcconfig"; sourceTree = "<group>"; };
-		D307150F21BA58D100D7204D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D307151121BA596400D7204D /* TinderCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCard.swift; sourceTree = "<group>"; };
-		D307151321BA596B00D7204D /* EmojiRateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRateView.swift; sourceTree = "<group>"; };
 		D307151521BA597200D7204D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D365A6B621B9011A00B21D3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D365A6B821B92E8400B21D3D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		D365A6BA21B92EF100B21D3D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		D365A6BC21B92EFF00B21D3D /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		D39B240121BE3D24006C738D /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientImageView.swift; path = "dating-app/Resources/Design/GradientImageView.swift"; sourceTree = SOURCE_ROOT; };
 		D39B24C121BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D39B24C221BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -439,14 +427,8 @@
 			isa = PBXGroup;
 			children = (
 				4724CDA721C53FE100E568F4 /* Main */,
-				D307151321BA596B00D7204D /* EmojiRateView.swift */,
-				D307151121BA596400D7204D /* TinderCard.swift */,
 				4749BAC121B3C510001989D6 /* LoginController.swift */,
 				D3DE619121B7A27900411928 /* SignController.swift */,
-				D365A6B821B92E8400B21D3D /* MainTabBarController.swift */,
-				D365A6BA21B92EF100B21D3D /* ProfileController.swift */,
-				D365A6BC21B92EFF00B21D3D /* ChatController.swift */,
-				D307150F21BA58D100D7204D /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1144,14 +1126,12 @@
 				D39B266C21BFB180006C738D /* UIView+Extensions.swift in Sources */,
 				D39B268521BFB180006C738D /* VideoView.swift in Sources */,
 				4724CDB221C5530500E568F4 /* CardView.swift in Sources */,
-				D365A6B921B92E8400B21D3D /* MainTabBarController.swift in Sources */,
 				D39B268F21BFB180006C738D /* UIBezierPath.swift in Sources */,
 				D39B269521BFB180006C738D /* Bool.swift in Sources */,
 				4724CDAB21C5405000E568F4 /* HomeBottomControlsStackView.swift in Sources */,
 				D39B268921BFB180006C738D /* GalleryItemsDataSource.swift in Sources */,
 				D39B268A21BFB180006C738D /* CALayer.swift in Sources */,
 				D39B26C021BFB180006C738D /* AssetsCollection+ChangesObserver.swift in Sources */,
-				D365A6BD21B92EFF00B21D3D /* ChatController.swift in Sources */,
 				D39B26BE21BFB180006C738D /* ItemWithImage.swift in Sources */,
 				D39B26B621BFB180006C738D /* PickerViewViewController.swift in Sources */,
 				D39B26AC21BFB180006C738D /* CountryCell.swift in Sources */,
@@ -1160,7 +1140,6 @@
 				D39B26C321BFB180006C738D /* TelegramPickerConfigurator.swift in Sources */,
 				D39B269A21BFB180006C738D /* CAShapeLayer.swift in Sources */,
 				D39B26AE21BFB180006C738D /* OneTextFieldViewController.swift in Sources */,
-				D307151421BA596B00D7204D /* EmojiRateView.swift in Sources */,
 				D39B26BB21BFB180006C738D /* ColorPickerViewController.swift in Sources */,
 				D39B26AB21BFB180006C738D /* CurrencyCell.swift in Sources */,
 				D39B268B21BFB180006C738D /* UIView.swift in Sources */,
@@ -1173,7 +1152,6 @@
 				D39B268121BFB180006C738D /* BlurView.swift in Sources */,
 				D39B267E21BFB180006C738D /* GalleryConfiguration.swift in Sources */,
 				D39B268D21BFB180006C738D /* UIColor.swift in Sources */,
-				D307151021BA58D100D7204D /* ViewController.swift in Sources */,
 				D39B26AF21BFB180006C738D /* Assets.swift in Sources */,
 				D39B269B21BFB180006C738D /* GalleryItemsDelegate.swift in Sources */,
 				D39B26B721BFB180006C738D /* ContactsPickerViewController.swift in Sources */,
@@ -1198,7 +1176,6 @@
 				D3DE619221B7A27900411928 /* SignController.swift in Sources */,
 				D39B26CF21BFB180006C738D /* TextField.swift in Sources */,
 				D39B269621BFB180006C738D /* CGRect.swift in Sources */,
-				D365A6BB21B92EF100B21D3D /* ProfileController.swift in Sources */,
 				D39B26C821BFB180006C738D /* CollectionViewPhotoCell.swift in Sources */,
 				D39B26C521BFB180006C738D /* TelegramPickerViewController.swift in Sources */,
 				D39B267221BFB180006C738D /* UISearchBar+Extensions.swift in Sources */,
@@ -1251,7 +1228,6 @@
 				D39B26A021BFB180006C738D /* GalleryViewController.swift in Sources */,
 				D39B26D121BFB180006C738D /* Button.swift in Sources */,
 				D39B26C621BFB180006C738D /* CollectionViewVideoCell.swift in Sources */,
-				D307151221BA596400D7204D /* TinderCard.swift in Sources */,
 				D39B26CA21BFB180006C738D /* LikeButtonCell.swift in Sources */,
 				D39B269D21BFB180006C738D /* GalleryDisplacedViewsDataSource.swift in Sources */,
 			);
