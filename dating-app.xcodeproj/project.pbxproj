@@ -370,7 +370,6 @@
 		4724CDA721C53FE100E568F4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4724CDAF21C5438000E568F4 /* Extensions+UIView.swift */,
 				4724CDA521C53BD500E568F4 /* MainController.swift */,
 				4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */,
 				4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */,
@@ -480,6 +479,7 @@
 		D39B249D21BF967E006C738D /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				4724CDAF21C5438000E568F4 /* Extensions+UIView.swift */,
 				D307151521BA597200D7204D /* GradientView.swift */,
 				D3DE618B21B7A18000411928 /* MaterialView.swift */,
 				D3DE618721B7A13000411928 /* DesignableTextField.swift */,
