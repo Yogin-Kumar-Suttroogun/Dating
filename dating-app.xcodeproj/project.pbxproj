@@ -12,6 +12,7 @@
 		4724CDA921C5402B00E568F4 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */; };
 		4724CDAB21C5405000E568F4 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */; };
 		4724CDB021C5438000E568F4 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDAF21C5438000E568F4 /* Extensions+UIView.swift */; };
+		4724CDB221C5530500E568F4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDB121C5530500E568F4 /* CardView.swift */; };
 		4749BAC021B3C510001989D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BABF21B3C510001989D6 /* AppDelegate.swift */; };
 		4749BAC221B3C510001989D6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAC121B3C510001989D6 /* LoginController.swift */; };
 		4749BAC521B3C510001989D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4749BAC321B3C510001989D6 /* Main.storyboard */; };
@@ -168,6 +169,7 @@
 		4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		4724CDAF21C5438000E568F4 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		4724CDB121C5530500E568F4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4749BABC21B3C510001989D6 /* dating-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dating-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4749BABF21B3C510001989D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4749BAC121B3C510001989D6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				4724CDA521C53BD500E568F4 /* MainController.swift */,
 				4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */,
 				4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */,
+				4724CDB121C5530500E568F4 /* CardView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1140,6 +1143,7 @@
 				D39B26CE21BFB180006C738D /* GradientSlider.swift in Sources */,
 				D39B266C21BFB180006C738D /* UIView+Extensions.swift in Sources */,
 				D39B268521BFB180006C738D /* VideoView.swift in Sources */,
+				4724CDB221C5530500E568F4 /* CardView.swift in Sources */,
 				D365A6B921B92E8400B21D3D /* MainTabBarController.swift in Sources */,
 				D39B268F21BFB180006C738D /* UIBezierPath.swift in Sources */,
 				D39B269521BFB180006C738D /* Bool.swift in Sources */,
