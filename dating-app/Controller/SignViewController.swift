@@ -56,10 +56,10 @@ class SignViewController: UIViewController {
         imgProfile.layer.borderColor = UIColor.white.cgColor
         imgProfile.layer.borderWidth = 2
         
-        let genderAndInterestedInTap = UITapGestureRecognizer(target: self, action: #selector(genderAndInterestedIn(tapGesture:)))
-//        genderTxtFld.addGestureRecognizer(genderAndInterestedInTap)
-        self.genderTxtFld.addGestureRecognizer(genderAndInterestedInTap)
-        self.interestedInTxtFld.addGestureRecognizer(genderAndInterestedInTap)
+//        let genderAndInterestedInTap = UITapGestureRecognizer(target: self, action: #selector(genderAndInterestedIn(tapGesture:)))
+////        genderTxtFld.addGestureRecognizer(genderAndInterestedInTap)
+//        self.genderTxtFld.addGestureRecognizer(genderAndInterestedInTap)
+//        self.interestedInTxtFld.addGestureRecognizer(genderAndInterestedInTap)
     }
     
     
@@ -75,24 +75,24 @@ extension SignViewController: UITextFieldDelegate {
         return true
     }
     
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        return false
-    }
-    
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        switch textField.tag {
-//        case 1:
-//            dob()
-//        case 2:
-////            genderAndInterestedIn(title:"Gender", message: "Select your gender")
-//        case 3:
-////            genderAndInterestedIn(title: "Interested In", message: "Select the gender you are interested in")
-//        case 4:
-//            location()
-//        default:
-//            print("default")
-//        }
+//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+//        return false
 //    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        switch textField.tag {
+        case 1:
+            dob()
+        case 2:
+            genderAndInterestedIn(title:"Gender", message: "Select your gender")
+        case 3:
+            genderAndInterestedIn(title: "Interested In", message: "Select the gender you are interested in")
+        case 4:
+            location()
+        default:
+            print("default")
+        }
+    }
     
     func dob() {
         let alert = UIAlertController(title: "Date", message: "Select your date of birth", preferredStyle: self.alertStyle)
@@ -103,22 +103,24 @@ extension SignViewController: UITextFieldDelegate {
         alert.show()
     }
     
-    @IBAction func genderAndInterestedIn(tapGesture: UITapGestureRecognizer) {
-        print(tapGesture.view?.tag)
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: self.alertStyle)
-//        let pickerViewValues: [[String]] = [["Male","Female"]]
-//        let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: 0)
-//
-//        alert.addPickerView(values: pickerViewValues, initialSelection: pickerViewSelectedValue) { vc, picker, index, values in
-//
-//            DispatchQueue.main.async {
-//                UIView.animate(withDuration: 1) {
-//                    print(index.row)
-//                }
-//            }
-//        }
-//        alert.addAction(title: "Done", style: .cancel)
-//        self.present(alert, animated: true, completion: nil)
+//    @IBAction func genderAndInterestedIn(tapGesture: UITapGestureRecognizer) {
+//        print(tapGesture.view?.tag)
+    
+    func genderAndInterestedIn(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: self.alertStyle)
+        let pickerViewValues: [[String]] = [["Male","Female"]]
+        let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: 0)
+
+        alert.addPickerView(values: pickerViewValues, initialSelection: pickerViewSelectedValue) { vc, picker, index, values in
+
+            DispatchQueue.main.async {
+                UIView.animate(withDuration: 1) {
+                    print(index.row)
+                }
+            }
+        }
+        alert.addAction(title: "Done", style: .cancel)
+        self.present(alert, animated: true, completion: nil)
 //        alert.show()
     }
     

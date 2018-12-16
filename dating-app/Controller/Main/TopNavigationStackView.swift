@@ -30,6 +30,15 @@ class TopNavigationStackView: UIStackView {
         
         isLayoutMarginsRelativeArrangement = true
         layoutMargins = .init(top: 0, left: 16, bottom: 0, right: 16)
+        
+        settingsButton.addTarget(self, action: #selector(goToProfile), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func goToProfile() {
+        let profileVC = ProfileViewController()
+        let navController = UINavigationController(rootViewController: profileVC)
+//        self.present(navController, animated: true)
+//        TopNavigationStackView.prese
     }
     
     required init(coder: NSCoder) {
