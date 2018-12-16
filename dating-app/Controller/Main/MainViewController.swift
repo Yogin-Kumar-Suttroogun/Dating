@@ -1,5 +1,5 @@
 //
-//  MainController.swift
+//  MainViewController.swift
 //  dating-app
 //
 //  Created by SUTTROOGUN Yogin Kumar on 15/12/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainController: UIViewController {
+class MainViewController: UIViewController {
 
     let topStackView = TopNavigationStackView()
     let cardsDeckView = UIView()

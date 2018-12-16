@@ -1,5 +1,5 @@
 //
-//  SignController.swift
+//  SignViewController.swift
 //  dating-app
 //
 //  Created by Yogin Kumar SUTTROOGUN on 05/12/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignController: UIViewController {
+class SignViewController: UIViewController {
 
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var fNameTxtFld: DesignableTextField! {
@@ -69,7 +69,7 @@ class SignController: UIViewController {
 }
 
 // MARK:- UITextFieldDelegate
-extension SignController: UITextFieldDelegate {
+extension SignViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

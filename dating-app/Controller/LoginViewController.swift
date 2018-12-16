@@ -1,5 +1,5 @@
 //
-//  LoginController.swift
+//  LoginViewController.swift
 //  dating-app
 //
 //  Created by SUTTROOGUN Yogin Kumar on 02/12/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var fbBtn: UIButton!
@@ -66,7 +66,7 @@ class LoginController: UIViewController {
 }
 
 // MARK:- UIScrollViewDelegate
-extension LoginController: UIScrollViewDelegate {
+extension LoginViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageControl.currentPage = Int(pageNumber)

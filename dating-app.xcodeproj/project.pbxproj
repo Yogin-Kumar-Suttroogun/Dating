@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		116A885C37A2F1944D595300 /* Pods_dating_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A3A886C0F0F3FB00711E38 /* Pods_dating_appUITests.framework */; };
-		4724CDA621C53BD500E568F4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDA521C53BD500E568F4 /* MainController.swift */; };
+		4724CDA621C53BD500E568F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDA521C53BD500E568F4 /* MainViewController.swift */; };
 		4724CDA921C5402B00E568F4 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */; };
 		4724CDAB21C5405000E568F4 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */; };
 		4724CDB021C5438000E568F4 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDAF21C5438000E568F4 /* Extensions+UIView.swift */; };
 		4724CDB221C5530500E568F4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CDB121C5530500E568F4 /* CardView.swift */; };
 		4749BAC021B3C510001989D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BABF21B3C510001989D6 /* AppDelegate.swift */; };
-		4749BAC221B3C510001989D6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAC121B3C510001989D6 /* LoginController.swift */; };
+		4749BAC221B3C510001989D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAC121B3C510001989D6 /* LoginViewController.swift */; };
 		4749BAC521B3C510001989D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4749BAC321B3C510001989D6 /* Main.storyboard */; };
 		4749BAC721B3C511001989D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4749BAC621B3C511001989D6 /* Assets.xcassets */; };
 		4749BACA21B3C511001989D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4749BAC821B3C511001989D6 /* LaunchScreen.storyboard */; };
 		4749BAD521B3C511001989D6 /* dating_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAD421B3C511001989D6 /* dating_appTests.swift */; };
 		4749BAE021B3C511001989D6 /* dating_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BADF21B3C511001989D6 /* dating_appUITests.swift */; };
+		47F0395721C60148006B71B9 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F0395621C60148006B71B9 /* ProfileController.swift */; };
+		47F0395921C60588006B71B9 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F0395821C60588006B71B9 /* SettingTableViewController.swift */; };
 		4D4BE5E53E85BB5F48C9C505 /* Pods_dating_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E1F4D759B69FF75FB6F99F /* Pods_dating_appTests.framework */; };
 		C680839FA02B53BA5982E584 /* Pods_dating_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A23463C976DB805ADD3DC0 /* Pods_dating_app.framework */; };
 		D307151621BA597200D7204D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307151521BA597200D7204D /* GradientView.swift */; };
@@ -137,7 +139,7 @@
 		D3DE618A21B7A13800411928 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE618921B7A13800411928 /* DesignableButton.swift */; };
 		D3DE618D21B7A18000411928 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE618B21B7A18000411928 /* MaterialView.swift */; };
 		D3DE619021B7A18D00411928 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE618F21B7A18D00411928 /* Validator.swift */; };
-		D3DE619221B7A27900411928 /* SignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE619121B7A27900411928 /* SignController.swift */; };
+		D3DE619221B7A27900411928 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE619121B7A27900411928 /* SignViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,14 +161,14 @@
 
 /* Begin PBXFileReference section */
 		2E932739E7358EDB5635CBC5 /* Pods-dating-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-appTests.debug.xcconfig"; path = "Target Support Files/Pods-dating-appTests/Pods-dating-appTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4724CDA521C53BD500E568F4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		4724CDA521C53BD500E568F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		4724CDAF21C5438000E568F4 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		4724CDB121C5530500E568F4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4749BABC21B3C510001989D6 /* dating-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dating-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4749BABF21B3C510001989D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4749BAC121B3C510001989D6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4749BAC121B3C510001989D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4749BAC421B3C510001989D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4749BAC621B3C511001989D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4749BAC921B3C511001989D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -177,6 +179,8 @@
 		4749BADB21B3C511001989D6 /* dating-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dating-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4749BADF21B3C511001989D6 /* dating_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dating_appUITests.swift; sourceTree = "<group>"; };
 		4749BAE121B3C511001989D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47F0395621C60148006B71B9 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		47F0395821C60588006B71B9 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		5A9398F96F1C82E33DA47BF7 /* Pods-dating-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-app.debug.xcconfig"; path = "Target Support Files/Pods-dating-app/Pods-dating-app.debug.xcconfig"; sourceTree = "<group>"; };
 		66F90FF8148C0D238D719F37 /* Pods-dating-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-app.release.xcconfig"; path = "Target Support Files/Pods-dating-app/Pods-dating-app.release.xcconfig"; sourceTree = "<group>"; };
 		69A3A886C0F0F3FB00711E38 /* Pods_dating_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dating_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,7 +305,7 @@
 		D3DE618921B7A13800411928 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		D3DE618B21B7A18000411928 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		D3DE618F21B7A18D00411928 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
-		D3DE619121B7A27900411928 /* SignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignController.swift; sourceTree = "<group>"; };
+		D3DE619121B7A27900411928 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		DAE0B1AB673D783CFF614099 /* Pods-dating-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-appUITests.release.xcconfig"; path = "Target Support Files/Pods-dating-appUITests/Pods-dating-appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F5E1F4D759B69FF75FB6F99F /* Pods_dating_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dating_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -360,7 +364,7 @@
 		4724CDA721C53FE100E568F4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4724CDA521C53BD500E568F4 /* MainController.swift */,
+				4724CDA521C53BD500E568F4 /* MainViewController.swift */,
 				4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */,
 				4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */,
 				4724CDB121C5530500E568F4 /* CardView.swift */,
@@ -427,8 +431,10 @@
 			isa = PBXGroup;
 			children = (
 				4724CDA721C53FE100E568F4 /* Main */,
-				4749BAC121B3C510001989D6 /* LoginController.swift */,
-				D3DE619121B7A27900411928 /* SignController.swift */,
+				4749BAC121B3C510001989D6 /* LoginViewController.swift */,
+				D3DE619121B7A27900411928 /* SignViewController.swift */,
+				47F0395621C60148006B71B9 /* ProfileController.swift */,
+				47F0395821C60588006B71B9 /* SettingTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1114,7 +1120,7 @@
 				D39B26A821BFB180006C738D /* LocaleInfo.swift in Sources */,
 				D39B269221BFB180006C738D /* UIViewController.swift in Sources */,
 				4724CDB021C5438000E568F4 /* Extensions+UIView.swift in Sources */,
-				4749BAC221B3C510001989D6 /* LoginController.swift in Sources */,
+				4749BAC221B3C510001989D6 /* LoginViewController.swift in Sources */,
 				D39B267621BFB180006C738D /* Optional+Extensions.swift in Sources */,
 				D39B26B821BFB180006C738D /* Contacts.swift in Sources */,
 				D39B26B321BFB180006C738D /* SearchHistoryManager.swift in Sources */,
@@ -1129,6 +1135,7 @@
 				D39B268F21BFB180006C738D /* UIBezierPath.swift in Sources */,
 				D39B269521BFB180006C738D /* Bool.swift in Sources */,
 				4724CDAB21C5405000E568F4 /* HomeBottomControlsStackView.swift in Sources */,
+				47F0395921C60588006B71B9 /* SettingTableViewController.swift in Sources */,
 				D39B268921BFB180006C738D /* GalleryItemsDataSource.swift in Sources */,
 				D39B268A21BFB180006C738D /* CALayer.swift in Sources */,
 				D39B26C021BFB180006C738D /* AssetsCollection+ChangesObserver.swift in Sources */,
@@ -1173,7 +1180,7 @@
 				D39B268821BFB180006C738D /* ImageViewController.swift in Sources */,
 				D39B269421BFB180006C738D /* AVPlayer.swift in Sources */,
 				D39B267721BFB180006C738D /* Bundle+Extensions.swift in Sources */,
-				D3DE619221B7A27900411928 /* SignController.swift in Sources */,
+				D3DE619221B7A27900411928 /* SignViewController.swift in Sources */,
 				D39B26CF21BFB180006C738D /* TextField.swift in Sources */,
 				D39B269621BFB180006C738D /* CGRect.swift in Sources */,
 				D39B26C821BFB180006C738D /* CollectionViewPhotoCell.swift in Sources */,
@@ -1206,6 +1213,7 @@
 				D39B267921BFB180006C738D /* AVCaptureSession+Extensions.swift in Sources */,
 				D39B269121BFB180006C738D /* UIButton.swift in Sources */,
 				D39B268321BFB180006C738D /* VideoScrubber.swift in Sources */,
+				47F0395721C60148006B71B9 /* ProfileController.swift in Sources */,
 				4749BAC021B3C510001989D6 /* AppDelegate.swift in Sources */,
 				D3DE618A21B7A13800411928 /* DesignableButton.swift in Sources */,
 				D39B240221BE3D24006C738D /* GradientImageView.swift in Sources */,
@@ -1216,7 +1224,7 @@
 				D39B26B921BFB180006C738D /* Contact.swift in Sources */,
 				D39B267D21BFB180006C738D /* AttributedTextBlock.swift in Sources */,
 				D39B26A421BFB180006C738D /* ImageFadeInHandler.swift in Sources */,
-				4724CDA621C53BD500E568F4 /* MainController.swift in Sources */,
+				4724CDA621C53BD500E568F4 /* MainViewController.swift in Sources */,
 				D39B267C21BFB180006C738D /* UITextField+Extensions.swift in Sources */,
 				D39B26CC21BFB180006C738D /* Label.swift in Sources */,
 				D39B267521BFB180006C738D /* CLPlacemark+Extensions.swift in Sources */,
