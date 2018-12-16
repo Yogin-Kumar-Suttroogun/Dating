@@ -82,7 +82,7 @@
         <!--Sign View Controller-->
         <scene sceneID="r4p-va-9dN">
             <objects>
-                <viewController storyboardIdentifier="newViewController" id="JjO-Gc-ihz" customClass="SignViewController" customModule="dating_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JjO-Gc-ihz" customClass="SignViewController" customModule="dating_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SKj-hK-a57">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,6 +344,9 @@
                                     <constraint firstAttribute="height" constant="35" id="kx2-8c-VEj"/>
                                 </constraints>
                                 <state key="normal" image="edit"/>
+                                <connections>
+                                    <action selector="editProfileBtnTap:" destination="Nky-ze-1c2" eventType="touchUpInside" id="8ds-JJ-uxZ"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIa-9t-yxV">
                                 <rect key="frame" x="187" y="591" width="1.5" height="25"/>
