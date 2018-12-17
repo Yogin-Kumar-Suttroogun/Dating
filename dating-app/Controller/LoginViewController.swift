@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
         initialize()
     }
     
@@ -32,6 +33,8 @@ class LoginViewController: UIViewController {
             
             let imgView = UIGradientImageView(frame: frame)
             imgView.image = UIImage(named: loginImg[index])
+            imgView.contentMode = .scaleAspectFill
+            imgView.clipsToBounds = true
             self.scrollView.addSubview(imgView)
         }
         

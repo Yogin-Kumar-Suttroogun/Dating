@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nky-ze-1c2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-Fd-Tkw">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-Fd-Tkw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LrK-Uo-SVv">
                                 <rect key="frame" x="75" y="492" width="225" height="37"/>
@@ -26,10 +27,10 @@
                                 <color key="currentPageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-Ui-45k">
-                                <rect key="frame" x="16" y="562" width="343" height="80"/>
+                                <rect key="frame" x="16" y="572" width="343" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-v3-Psq">
-                                        <rect key="frame" x="16" y="0.0" width="311" height="35"/>
+                                        <rect key="frame" x="16" y="0.0" width="311" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.73020119859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Login with email">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,7 +41,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peX-va-SlI" customClass="FBSDKLoginButton">
-                                        <rect key="frame" x="16" y="45" width="311" height="35"/>
+                                        <rect key="frame" x="16" y="40" width="311" height="30"/>
                                         <state key="normal" title="Login with an facebook"/>
                                     </button>
                                 </subviews>
@@ -54,17 +55,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="130" id="2o3-uH-qdb"/>
-                            <constraint firstItem="2EH-Ui-45k" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="25" id="Eq7-J6-Qy1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LrK-Uo-SVv" secondAttribute="trailing" constant="75" id="Q87-nz-5nR"/>
+                            <constraint firstItem="2EH-Ui-45k" firstAttribute="top" secondItem="LrK-Uo-SVv" secondAttribute="bottom" constant="43" id="T5Q-CF-rfn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2EH-Ui-45k" secondAttribute="bottom" constant="25" id="TjZ-04-ONn"/>
                             <constraint firstItem="LrK-Uo-SVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="UeJ-Fz-5q2"/>
-                            <constraint firstItem="bJB-Fd-Tkw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WMR-eg-q6b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LrK-Uo-SVv" secondAttribute="trailing" constant="75" id="WfS-yf-q2X"/>
-                            <constraint firstItem="bJB-Fd-Tkw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X2r-d4-dBx"/>
-                            <constraint firstItem="LrK-Uo-SVv" firstAttribute="top" secondItem="bJB-Fd-Tkw" secondAttribute="bottom" constant="-45" id="ZfX-bA-yey"/>
+                            <constraint firstItem="LrK-Uo-SVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="br9-4G-zFp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2EH-Ui-45k" secondAttribute="trailing" constant="16" id="h62-5k-mX0"/>
                             <constraint firstItem="2EH-Ui-45k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rX7-yo-LY3"/>
-                            <constraint firstItem="bJB-Fd-Tkw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tjU-kc-KcU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
