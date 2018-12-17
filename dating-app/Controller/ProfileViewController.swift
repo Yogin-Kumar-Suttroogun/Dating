@@ -15,8 +15,8 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func editProfileBtnTap(_ sender: Any) {
-        let settingsVC = SettingTableViewController()
-        let navController = UINavigationController(rootViewController: settingsVC)
+        let editProfileVC = EditProfileTableViewController()
+        let navController = UINavigationController(rootViewController: editProfileVC)
         present(navController, animated: true)
     }
 }

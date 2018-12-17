@@ -1,5 +1,5 @@
 //
-//  SettingTableViewController.swift
+//  EditProfileTableViewController.swift
 //  dating-app
 //
 //  Created by SUTTROOGUN Yogin Kumar on 16/12/2018.
@@ -12,7 +12,7 @@ class CustomImagePickerController: UIImagePickerController {
     var imageButton: UIButton?
 }
 
-class SettingTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EditProfileTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()

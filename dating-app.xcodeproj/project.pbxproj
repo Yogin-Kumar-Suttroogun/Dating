@@ -21,7 +21,7 @@
 		4749BAD521B3C511001989D6 /* dating_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BAD421B3C511001989D6 /* dating_appTests.swift */; };
 		4749BAE021B3C511001989D6 /* dating_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749BADF21B3C511001989D6 /* dating_appUITests.swift */; };
 		47F0395721C60148006B71B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F0395621C60148006B71B9 /* ProfileViewController.swift */; };
-		47F0395921C60588006B71B9 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F0395821C60588006B71B9 /* SettingTableViewController.swift */; };
+		47F0395921C60588006B71B9 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F0395821C60588006B71B9 /* EditProfileTableViewController.swift */; };
 		4D4BE5E53E85BB5F48C9C505 /* Pods_dating_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E1F4D759B69FF75FB6F99F /* Pods_dating_appTests.framework */; };
 		C680839FA02B53BA5982E584 /* Pods_dating_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A23463C976DB805ADD3DC0 /* Pods_dating_app.framework */; };
 		D307151621BA597200D7204D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307151521BA597200D7204D /* GradientView.swift */; };
@@ -180,7 +180,7 @@
 		4749BADF21B3C511001989D6 /* dating_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dating_appUITests.swift; sourceTree = "<group>"; };
 		4749BAE121B3C511001989D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47F0395621C60148006B71B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		47F0395821C60588006B71B9 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		47F0395821C60588006B71B9 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		5A9398F96F1C82E33DA47BF7 /* Pods-dating-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-app.debug.xcconfig"; path = "Target Support Files/Pods-dating-app/Pods-dating-app.debug.xcconfig"; sourceTree = "<group>"; };
 		66F90FF8148C0D238D719F37 /* Pods-dating-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-app.release.xcconfig"; path = "Target Support Files/Pods-dating-app/Pods-dating-app.release.xcconfig"; sourceTree = "<group>"; };
 		69A3A886C0F0F3FB00711E38 /* Pods_dating_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dating_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -434,7 +434,7 @@
 				4749BAC121B3C510001989D6 /* LoginViewController.swift */,
 				D3DE619121B7A27900411928 /* SignViewController.swift */,
 				47F0395621C60148006B71B9 /* ProfileViewController.swift */,
-				47F0395821C60588006B71B9 /* SettingTableViewController.swift */,
+				47F0395821C60588006B71B9 /* EditProfileTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1135,7 +1135,7 @@
 				D39B268F21BFB180006C738D /* UIBezierPath.swift in Sources */,
 				D39B269521BFB180006C738D /* Bool.swift in Sources */,
 				4724CDAB21C5405000E568F4 /* HomeBottomControlsStackView.swift in Sources */,
-				47F0395921C60588006B71B9 /* SettingTableViewController.swift in Sources */,
+				47F0395921C60588006B71B9 /* EditProfileTableViewController.swift in Sources */,
 				D39B268921BFB180006C738D /* GalleryItemsDataSource.swift in Sources */,
 				D39B268A21BFB180006C738D /* CALayer.swift in Sources */,
 				D39B26C021BFB180006C738D /* AssetsCollection+ChangesObserver.swift in Sources */,
