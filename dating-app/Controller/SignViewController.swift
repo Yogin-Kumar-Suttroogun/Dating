@@ -55,16 +55,6 @@ class SignViewController: UIViewController {
         imgProfile.clipsToBounds = true
         imgProfile.layer.borderColor = UIColor.white.cgColor
         imgProfile.layer.borderWidth = 2
-        
-//        let genderAndInterestedInTap = UITapGestureRecognizer(target: self, action: #selector(genderAndInterestedIn(tapGesture:)))
-////        genderTxtFld.addGestureRecognizer(genderAndInterestedInTap)
-//        self.genderTxtFld.addGestureRecognizer(genderAndInterestedInTap)
-//        self.interestedInTxtFld.addGestureRecognizer(genderAndInterestedInTap)
-    }
-    
-    
-    func didBeginEditing() {
-        
     }
 }
 
@@ -75,36 +65,36 @@ extension SignViewController: UITextFieldDelegate {
         return true
     }
     
-//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-//        return false
-//    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         switch textField.tag {
         case 1:
+            self.view.endEditing(true)
             dob()
+            return false
         case 2:
+            self.view.endEditing(true)
             genderAndInterestedIn(title:"Gender", message: "Select your gender")
+            return false
         case 3:
+            self.view.endEditing(true)
             genderAndInterestedIn(title: "Interested In", message: "Select the gender you are interested in")
+            return false
         case 4:
+            self.view.endEditing(true)
             location()
+            return false
         default:
-            print("default")
+            return true
         }
     }
-    
     func dob() {
         let alert = UIAlertController(title: "Date", message: "Select your date of birth", preferredStyle: self.alertStyle)
         alert.addDatePicker(mode: .dateAndTime, date: Date(), minimumDate: nil, maximumDate: nil) { date in
             Log(date)
         }
         alert.addAction(title: "Done", style: .cancel)
-        alert.show()
+        self.present(alert, animated: true, completion: nil)
     }
-    
-//    @IBAction func genderAndInterestedIn(tapGesture: UITapGestureRecognizer) {
-//        print(tapGesture.view?.tag)
     
     func genderAndInterestedIn(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: self.alertStyle)
@@ -121,13 +111,12 @@ extension SignViewController: UITextFieldDelegate {
         }
         alert.addAction(title: "Done", style: .cancel)
         self.present(alert, animated: true, completion: nil)
-//        alert.show()
     }
     
     func location() {
         let alert = UIAlertController(style: self.alertStyle)
         alert.addLocalePicker(type: .country) { info in Log(info) }
         alert.addAction(title: "Cancel", style: .cancel)
-        alert.show()
+        self.present(alert, animated: true, completion: nil)
     }
 }
