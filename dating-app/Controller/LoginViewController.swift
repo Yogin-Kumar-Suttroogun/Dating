@@ -43,32 +43,16 @@ class LoginViewController: UIViewController {
         
 //        Localizing the app
         mailBtn.setTitle(NSLocalizedString("login.email", comment: ""), for: .normal)
-        
-//        fbBtn.layer.borderWidth = 1
-//        fbBtn.layer.borderColor = UIColor.init(red: 20/255, green: 132/255, blue: 255/255, alpha: 1).cgColor
-//        
-//        mailBtn.layer.borderWidth = 1
-//        mailBtn.layer.borderColor = UIColor.init(red: 255/255, green: 55/255, blue: 20/255, alpha: 1).cgColor
     }
     
 //    Changing the top view text
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
-    
-    @IBAction func loginEmail(_ sender: Any) {
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "newViewController") as! SignController
-//        self.present(newViewController, animated: true, completion: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
 }
 
-// MARK:- UIScrollViewDelegate
+// MARK:- ScrollView
+
 extension LoginViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width

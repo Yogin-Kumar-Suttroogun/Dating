@@ -56,9 +56,14 @@ class SignViewController: UIViewController {
         imgProfile.layer.borderColor = UIColor.white.cgColor
         imgProfile.layer.borderWidth = 2
     }
+    
+    @IBAction func registerBtnTap(_ sender: Any) {
+        
+    }
 }
 
-// MARK:- UITextFieldDelegate
+// MARK:- TextField
+
 extension SignViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -89,10 +94,13 @@ extension SignViewController: UITextFieldDelegate {
     }
     func dob() {
         let alert = UIAlertController(title: "Date", message: "Select your date of birth", preferredStyle: self.alertStyle)
-        alert.addDatePicker(mode: .dateAndTime, date: Date(), minimumDate: nil, maximumDate: nil) { date in
-            Log(date)
+        alert.addDatePicker(mode: .date, date: Date(), minimumDate: nil, maximumDate: nil) { date in
+            Log(date.dateString())
         }
-        alert.addAction(title: "Done", style: .cancel)
+        alert.addAction(title: "Done", style: .cancel, handler: {(alert: UIAlertAction!) in
+//            When button done is clicked then perform saving
+            print("Done clicked!")
+        })
         self.present(alert, animated: true, completion: nil)
     }
     
