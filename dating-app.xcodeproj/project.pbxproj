@@ -26,6 +26,7 @@
 		C680839FA02B53BA5982E584 /* Pods_dating_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A23463C976DB805ADD3DC0 /* Pods_dating_app.framework */; };
 		D307151621BA597200D7204D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307151521BA597200D7204D /* GradientView.swift */; };
 		D365A6B721B9011A00B21D3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D365A6B621B9011A00B21D3D /* GoogleService-Info.plist */; };
+		D38EC33621C7731500104E79 /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33521C7731500104E79 /* EditProfileTableViewCell.swift */; };
 		D39B240221BE3D24006C738D /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B240121BE3D24006C738D /* GradientImageView.swift */; };
 		D39B24C521BFA5D2006C738D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39B24C721BFA5D2006C738D /* Localizable.strings */; };
 		D39B266821BFB180006C738D /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B25DF21BFB180006C738D /* Array+Extensions.swift */; };
@@ -189,6 +190,7 @@
 		C9872616F02D73BE21963791 /* Pods-dating-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dating-appTests.release.xcconfig"; path = "Target Support Files/Pods-dating-appTests/Pods-dating-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		D307151521BA597200D7204D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D365A6B621B9011A00B21D3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D38EC33521C7731500104E79 /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		D39B240121BE3D24006C738D /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientImageView.swift; path = "dating-app/Resources/Design/GradientImageView.swift"; sourceTree = SOURCE_ROOT; };
 		D39B24C121BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D39B24C221BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 				D3DE619121B7A27900411928 /* SignViewController.swift */,
 				47F0395621C60148006B71B9 /* ProfileViewController.swift */,
 				47F0395821C60588006B71B9 /* EditProfileTableViewController.swift */,
+				D38EC33521C7731500104E79 /* EditProfileTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1130,6 +1133,7 @@
 				D39B267B21BFB180006C738D /* Locale+Extensions.swift in Sources */,
 				D39B26CE21BFB180006C738D /* GradientSlider.swift in Sources */,
 				D39B266C21BFB180006C738D /* UIView+Extensions.swift in Sources */,
+				D38EC33621C7731500104E79 /* EditProfileTableViewCell.swift in Sources */,
 				D39B268521BFB180006C738D /* VideoView.swift in Sources */,
 				4724CDB221C5530500E568F4 /* CardView.swift in Sources */,
 				D39B268F21BFB180006C738D /* UIBezierPath.swift in Sources */,

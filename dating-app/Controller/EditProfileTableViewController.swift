@@ -20,6 +20,7 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
         setupNavigationItems()
         tableView.backgroundColor = UIColor(white: 0.95, alpha: 1)
         tableView.tableFooterView = UIView()
+        tableView.keyboardDismissMode = .interactive
     }
     
 //    instance properties
@@ -99,7 +100,18 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
         }
         
         let headerLbl = HeaderLbl()
-        headerLbl.text = "Name"
+        switch section {
+        case 1:
+            headerLbl.text = "Name"
+        case 2:
+            headerLbl.text = "Profession"
+        case 3:
+            headerLbl.text = "School"
+        case 4:
+            headerLbl.text = "Bio"
+        default:
+            ()
+        }
         return headerLbl
     }
     
@@ -119,8 +131,21 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = "TEST"
+        let cell = EditProfileTableViewCell(style: .default, reuseIdentifier: nil)
+        
+        switch indexPath.section {
+        case 1:
+            cell.textField.placeholder = "Enter Name"
+        case 2:
+            cell.textField.placeholder = "Enter Profession"
+        case 3:
+            cell.textField.placeholder = "Enter School"
+        case 4:
+            cell.textField.placeholder = "Enter Bio"
+        default:
+            ()
+        }
+        
         return cell
     }
 }
