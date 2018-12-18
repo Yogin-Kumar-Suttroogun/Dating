@@ -23,6 +23,19 @@ class CardView: UIView {
                 barsStackView.addArrangedSubview(barView)
             }
             barsStackView.arrangedSubviews.first?.backgroundColor = .white
+            
+            setupImageIndexObserver()
+        }
+    }
+    
+    fileprivate func setupImageIndexObserver() {
+        cardViewModel.imgIndexObserver = { [weak self] (index, image) in
+            self?.imgView.image = image
+            
+            self?.barsStackView.arrangedSubviews.forEach({ (v) in
+                v.backgroundColor = self?.barDeselectedColor
+            })
+            self?.barsStackView.arrangedSubviews[index].backgroundColor = .white
         }
     }
     
@@ -51,18 +64,12 @@ class CardView: UIView {
     @objc fileprivate func handleTap(gesture: UITapGestureRecognizer) {
         let tapLocation = gesture.location(in: nil)
         let shouldAdvanceNextPhoto = tapLocation.x > frame.width / 2 ? true : false
-        if shouldAdvanceNextPhoto {
-            imgIndex = min(imgIndex + 1, cardViewModel.imgNames.count - 1)
-        }else {
-            imgIndex = max(0, imgIndex - 1)
-        }
         
-        let imgName = cardViewModel.imgNames[imgIndex]
-        imgView.image = UIImage(named: imgName)
-        barsStackView.arrangedSubviews.forEach { (v) in
-            v.backgroundColor = barDeselectedColor
+        if shouldAdvanceNextPhoto {
+            cardViewModel.advanceToNextPhoto()
+        }else {
+            cardViewModel.goToPreviousPhoto()
         }
-        barsStackView.arrangedSubviews[imgIndex].backgroundColor = .white
     }
     
     fileprivate func setupLayout() {
