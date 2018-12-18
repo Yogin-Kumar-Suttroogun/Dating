@@ -367,17 +367,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4724CDA721C53FE100E568F4 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				4724CDA521C53BD500E568F4 /* MainViewController.swift */,
-				4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */,
-				4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */,
-				4724CDB121C5530500E568F4 /* CardView.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		4749BAB321B3C510001989D6 = {
 			isa = PBXGroup;
 			children = (
@@ -437,7 +426,7 @@
 		4749BAED21B3C6EC001989D6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4724CDA721C53FE100E568F4 /* Main */,
+				4724CDA521C53BD500E568F4 /* MainViewController.swift */,
 				4749BAC121B3C510001989D6 /* LoginViewController.swift */,
 				D3DE619121B7A27900411928 /* SignViewController.swift */,
 				47F0395621C60148006B71B9 /* ProfileViewController.swift */,
@@ -452,6 +441,9 @@
 			children = (
 				4749BAC821B3C511001989D6 /* LaunchScreen.storyboard */,
 				4749BAC321B3C510001989D6 /* Main.storyboard */,
+				4724CDA821C5402B00E568F4 /* TopNavigationStackView.swift */,
+				4724CDAA21C5405000E568F4 /* HomeBottomControlsStackView.swift */,
+				4724CDB121C5530500E568F4 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
