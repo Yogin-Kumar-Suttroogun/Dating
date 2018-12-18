@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+protocol ProducesCardViewModel {
+    func toCardViewModel() -> CardViewModel
+}
+
 struct CardViewModel {
     let imgName: String
     let attributedString: NSAttributedString

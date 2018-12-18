@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct User {
+struct User: ProducesCardViewModel {
 //    Attributes
     let name: String
     let age: Int
