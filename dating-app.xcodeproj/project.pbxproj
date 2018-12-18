@@ -28,6 +28,7 @@
 		D365A6B721B9011A00B21D3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D365A6B621B9011A00B21D3D /* GoogleService-Info.plist */; };
 		D38EC33621C7731500104E79 /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33521C7731500104E79 /* EditProfileTableViewCell.swift */; };
 		D38EC33821C7C59B00104E79 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33721C7C59B00104E79 /* User.swift */; };
+		D38EC33B21C8C2D700104E79 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33A21C8C2D700104E79 /* CardViewModel.swift */; };
 		D39B240221BE3D24006C738D /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B240121BE3D24006C738D /* GradientImageView.swift */; };
 		D39B24C521BFA5D2006C738D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39B24C721BFA5D2006C738D /* Localizable.strings */; };
 		D39B266821BFB180006C738D /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B25DF21BFB180006C738D /* Array+Extensions.swift */; };
@@ -193,6 +194,7 @@
 		D365A6B621B9011A00B21D3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D38EC33521C7731500104E79 /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		D38EC33721C7C59B00104E79 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D38EC33A21C8C2D700104E79 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		D39B240121BE3D24006C738D /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientImageView.swift; path = "dating-app/Resources/Design/GradientImageView.swift"; sourceTree = SOURCE_ROOT; };
 		D39B24C121BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D39B24C221BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 		4749BABE21B3C510001989D6 /* dating-app */ = {
 			isa = PBXGroup;
 			children = (
+				D38EC33921C8C2B600104E79 /* ViewModels */,
 				4749BAEF21B3C6F5001989D6 /* Model */,
 				4749BAEE21B3C6F1001989D6 /* View */,
 				4749BAED21B3C6EC001989D6 /* Controller */,
@@ -471,6 +474,14 @@
 				4749BAC621B3C511001989D6 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D38EC33921C8C2B600104E79 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D38EC33A21C8C2D700104E79 /* CardViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D39B249D21BF967E006C738D /* Design */ = {
@@ -1159,6 +1170,7 @@
 				D39B268B21BFB180006C738D /* UIView.swift in Sources */,
 				D39B266B21BFB180006C738D /* UIViewController+Extensions.swift in Sources */,
 				D39B269C21BFB180006C738D /* GalleryItem.swift in Sources */,
+				D38EC33B21C8C2D700104E79 /* CardViewModel.swift in Sources */,
 				D39B26AA21BFB180006C738D /* PhoneCodeCell.swift in Sources */,
 				4724CDA921C5402B00E568F4 /* TopNavigationStackView.swift in Sources */,
 				D39B26BF21BFB180006C738D /* TelegramPickerGalleryItemsDataSource.swift in Sources */,
