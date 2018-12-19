@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qNI-Ma-9zA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JjO-Gc-ihz">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -94,131 +94,136 @@
                                     <constraint firstAttribute="width" constant="175" id="d6m-0k-k7z"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFo-cO-XTt" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
-                                <rect key="frame" x="54" y="414" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="dq6-Ns-IvJ"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="gender"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Interested in" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YC9-IT-UC6" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
-                                <rect key="frame" x="54" y="464" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="lqb-iZ-HOP"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="gender"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gz7-Gf-b6M" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
-                                <rect key="frame" x="54" y="564" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="H6b-bI-MLr"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HeH-4H-n5U" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
-                                <rect key="frame" x="54" y="514" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="rec-7X-YMc"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="map"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBU-ee-DLv" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
-                                <rect key="frame" x="54" y="314" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Mpm-q1-dVP"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="user"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gU6-bG-YTr" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
-                                <rect key="frame" x="54" y="364" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Ec1-he-LzS"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="birthday"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Ev-w0-CPW">
+                                <rect key="frame" x="54" y="314" width="267" height="285"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBU-ee-DLv" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="35"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Mpm-q1-dVP"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="user"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gU6-bG-YTr" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="267" height="35"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Ec1-he-LzS"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="birthday"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFo-cO-XTt" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="267" height="35"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="dq6-Ns-IvJ"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="gender"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Interested in" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YC9-IT-UC6" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="267" height="35"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="lqb-iZ-HOP"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="gender"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HeH-4H-n5U" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="200" width="267" height="35"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="rec-7X-YMc"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="map"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gz7-Gf-b6M" customClass="DesignableTextField" customModule="dating_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="250" width="267" height="35"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="H6b-bI-MLr"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INz-2Q-bf7" customClass="DesignableButton" customModule="dating_app" customModuleProvider="target">
-                                <rect key="frame" x="54" y="654" width="267" height="30"/>
+                                <rect key="frame" x="54" y="654" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="MRF-Az-PdG"/>
+                                    <constraint firstAttribute="height" constant="35" id="MRF-Az-PdG"/>
                                 </constraints>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,35 +241,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Gz7-Gf-b6M" firstAttribute="leading" secondItem="HeH-4H-n5U" secondAttribute="leading" id="4s1-nI-uzJ"/>
-                            <constraint firstItem="YC9-IT-UC6" firstAttribute="leading" secondItem="LFo-cO-XTt" secondAttribute="leading" id="7Bu-bY-nNM"/>
-                            <constraint firstItem="Gz7-Gf-b6M" firstAttribute="top" secondItem="HeH-4H-n5U" secondAttribute="bottom" constant="15" id="8nU-jw-Asj"/>
-                            <constraint firstItem="Bzf-Ba-zYT" firstAttribute="trailing" secondItem="LFo-cO-XTt" secondAttribute="trailing" constant="54" id="Aip-LM-hTc"/>
-                            <constraint firstItem="LFo-cO-XTt" firstAttribute="leading" secondItem="Bzf-Ba-zYT" secondAttribute="leading" constant="54" id="BAs-7T-uBb"/>
+                            <constraint firstItem="Bzf-Ba-zYT" firstAttribute="trailing" secondItem="4Ev-w0-CPW" secondAttribute="trailing" constant="54" id="5D1-tF-bTN"/>
                             <constraint firstAttribute="bottom" secondItem="rs6-cM-2WJ" secondAttribute="bottom" id="BFk-xs-ajT"/>
-                            <constraint firstItem="HeH-4H-n5U" firstAttribute="leading" secondItem="YC9-IT-UC6" secondAttribute="leading" id="DVt-gY-JKy"/>
                             <constraint firstItem="rs6-cM-2WJ" firstAttribute="top" secondItem="SKj-hK-a57" secondAttribute="top" id="FMY-h0-wp8"/>
-                            <constraint firstItem="YC9-IT-UC6" firstAttribute="top" secondItem="LFo-cO-XTt" secondAttribute="bottom" constant="15" id="I6g-wy-IR8"/>
-                            <constraint firstItem="LFo-cO-XTt" firstAttribute="top" secondItem="gU6-bG-YTr" secondAttribute="bottom" constant="15" id="Jtn-5B-AtY"/>
+                            <constraint firstItem="INz-2Q-bf7" firstAttribute="top" secondItem="4Ev-w0-CPW" secondAttribute="bottom" constant="55" id="Ls2-gq-lcK"/>
                             <constraint firstItem="Izx-wx-MQk" firstAttribute="centerX" secondItem="rs6-cM-2WJ" secondAttribute="centerX" id="MXo-UH-YO3"/>
-                            <constraint firstItem="gU6-bG-YTr" firstAttribute="leading" secondItem="Bzf-Ba-zYT" secondAttribute="leading" constant="54" id="MjV-l7-WkG"/>
-                            <constraint firstItem="Bzf-Ba-zYT" firstAttribute="trailing" secondItem="gU6-bG-YTr" secondAttribute="trailing" constant="54" id="T4e-Da-H6y"/>
-                            <constraint firstItem="wBU-ee-DLv" firstAttribute="leading" secondItem="Bzf-Ba-zYT" secondAttribute="leading" constant="54" id="UUo-ve-bMn"/>
-                            <constraint firstItem="gU6-bG-YTr" firstAttribute="top" secondItem="wBU-ee-DLv" secondAttribute="bottom" constant="15" id="YKO-r8-Bea"/>
-                            <constraint firstItem="LFo-cO-XTt" firstAttribute="leading" secondItem="gU6-bG-YTr" secondAttribute="leading" id="bsY-3a-Nve"/>
-                            <constraint firstItem="INz-2Q-bf7" firstAttribute="trailing" secondItem="Gz7-Gf-b6M" secondAttribute="trailing" id="cGc-Wm-fpX"/>
-                            <constraint firstItem="HeH-4H-n5U" firstAttribute="trailing" secondItem="YC9-IT-UC6" secondAttribute="trailing" id="clJ-Nc-AUp"/>
-                            <constraint firstItem="Bzf-Ba-zYT" firstAttribute="trailing" secondItem="wBU-ee-DLv" secondAttribute="trailing" constant="54" id="dPG-fh-TYF"/>
+                            <constraint firstItem="Bzf-Ba-zYT" firstAttribute="trailing" secondItem="INz-2Q-bf7" secondAttribute="trailing" constant="54" id="cSD-im-P2E"/>
+                            <constraint firstItem="4Ev-w0-CPW" firstAttribute="top" secondItem="Izx-wx-MQk" secondAttribute="bottom" constant="55" id="ckn-wj-MCU"/>
                             <constraint firstItem="Izx-wx-MQk" firstAttribute="top" secondItem="Bzf-Ba-zYT" secondAttribute="top" constant="40" id="ete-zD-tJU"/>
-                            <constraint firstItem="INz-2Q-bf7" firstAttribute="top" secondItem="Gz7-Gf-b6M" secondAttribute="bottom" constant="55" id="guo-XU-20B"/>
                             <constraint firstItem="rs6-cM-2WJ" firstAttribute="leading" secondItem="Bzf-Ba-zYT" secondAttribute="leading" id="gzY-2M-Hjx"/>
-                            <constraint firstItem="Gz7-Gf-b6M" firstAttribute="trailing" secondItem="HeH-4H-n5U" secondAttribute="trailing" id="kuv-4Z-IqM"/>
-                            <constraint firstItem="LFo-cO-XTt" firstAttribute="trailing" secondItem="gU6-bG-YTr" secondAttribute="trailing" id="lQt-KU-2ZK"/>
-                            <constraint firstItem="INz-2Q-bf7" firstAttribute="leading" secondItem="Gz7-Gf-b6M" secondAttribute="leading" id="lcS-SM-HwS"/>
-                            <constraint firstItem="wBU-ee-DLv" firstAttribute="top" secondItem="Izx-wx-MQk" secondAttribute="bottom" constant="55" id="o81-HC-BNB"/>
-                            <constraint firstItem="YC9-IT-UC6" firstAttribute="trailing" secondItem="LFo-cO-XTt" secondAttribute="trailing" id="org-M1-1Tg"/>
+                            <constraint firstItem="4Ev-w0-CPW" firstAttribute="leading" secondItem="Bzf-Ba-zYT" secondAttribute="leading" constant="54" id="mse-dU-KPv"/>
+                            <constraint firstItem="INz-2Q-bf7" firstAttribute="leading" secondItem="Bzf-Ba-zYT" secondAttribute="leading" constant="54" id="uer-iV-Oha"/>
                             <constraint firstItem="rs6-cM-2WJ" firstAttribute="trailing" secondItem="Bzf-Ba-zYT" secondAttribute="trailing" id="val-vs-uwD"/>
-                            <constraint firstItem="HeH-4H-n5U" firstAttribute="top" secondItem="YC9-IT-UC6" secondAttribute="bottom" constant="15" id="z8z-Xv-po0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bzf-Ba-zYT"/>
                     </view>
@@ -276,6 +264,8 @@
                         <outlet property="interestedInTxtFld" destination="YC9-IT-UC6" id="DMM-xe-UFg"/>
                         <outlet property="locationTxtFld" destination="HeH-4H-n5U" id="TCp-GO-fX7"/>
                         <outlet property="pwdTxtFld" destination="Gz7-Gf-b6M" id="QFm-ic-YXp"/>
+                        <outlet property="registerBtn" destination="INz-2Q-bf7" id="Cur-7E-Es8"/>
+                        <outlet property="stackTxtFld" destination="4Ev-w0-CPW" id="NYb-wF-Zbw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3I-0D-Wn8" userLabel="First Responder" sceneMemberID="firstResponder"/>

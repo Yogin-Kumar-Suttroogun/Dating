@@ -42,12 +42,52 @@ class SignViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var registerBtn: DesignableButton!
+    @IBOutlet weak var stackTxtFld: UIStackView!
+    
     fileprivate var alertStyle: UIAlertController.Style = .actionSheet
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initialize()
+        setupNotificationObserver()
+        setupTapGesture()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+//        You will have a retain cycle
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    fileprivate func setupTapGesture() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapDismiss)))
+    }
+    
+    @objc fileprivate func handleTapDismiss() {
+        self.view.endEditing(true)
+    }
+    
+    fileprivate func setupNotificationObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc fileprivate func handleKeyboardShow(notification: Notification) {
+        guard let value = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {
+            return
+        }
+        let keyboardFrame = value.cgRectValue
+        let bottomSpace = keyboardFrame.height - stackTxtFld.frame.origin.y - stackTxtFld.frame.height
+        let diff = keyboardFrame.height - bottomSpace
+        self.view.transform = CGAffineTransform(translationX: 0, y: -diff/4 - 8)
+    }
+    
+    @objc fileprivate func handleKeyboardHide() {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.view.transform = .identity
+        })
     }
     
     func initialize() {
