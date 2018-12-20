@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import JGProgressHUD
 
 class SignViewController: UIViewController {
 
@@ -131,7 +133,27 @@ class SignViewController: UIViewController {
     }
     
     @IBAction func registerBtnTap(_ sender: Any) {
+        self.handleTapDismiss()
+        guard let email = fNameTxtFld.text else {return}
+        guard let pwd = pwdTxtFld.text else {return}
         
+        Auth.auth().createUser(withEmail: email, password: pwd) { (res, err) in
+            if let err = err {
+                print(err)
+                self.showHUDWithError(err)
+                return
+            }
+            
+            print("Successfully registered user:",res?.user.uid ?? "")
+        }
+    }
+    
+    fileprivate func showHUDWithError(_ error: Error) {
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Failed registration"
+        hud.detailTextLabel.text = error.localizedDescription
+        hud.show(in: self.view)
+        hud.dismiss(afterDelay: 4)
     }
 }
 

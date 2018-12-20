@@ -235,7 +235,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerBtnTap:" destination="JjO-Gc-ihz" eventType="touchUpInside" id="jIH-si-3qW"/>
-                                    <segue destination="qNI-Ma-9zA" kind="show" id="o7c-Uq-pBJ"/>
                                 </connections>
                             </button>
                         </subviews>
