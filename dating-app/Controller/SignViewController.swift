@@ -14,36 +14,44 @@ class SignViewController: UIViewController {
     @IBOutlet weak var fNameTxtFld: DesignableTextField! {
         didSet {
             fNameTxtFld.delegate = self
+            fNameTxtFld.addTarget(self, action: #selector(handleTextChanged), for: .editingChanged)
         }
     }
     @IBOutlet weak var dobTxtFld: DesignableTextField! {
         didSet {
             dobTxtFld.delegate = self
+            dobTxtFld.addTarget(self, action: #selector(handleTextChanged), for: .editingChanged)
         }
     }
     @IBOutlet weak var genderTxtFld: DesignableTextField! {
         didSet {
             genderTxtFld.delegate = self
+            genderTxtFld.addTarget(self, action: #selector(handleTextChanged), for: .editingChanged)
         }
     }
     @IBOutlet weak var interestedInTxtFld: DesignableTextField! {
         didSet {
             interestedInTxtFld.delegate = self
+            interestedInTxtFld.addTarget(self, action: #selector(handleTextChanged), for: .editingChanged)
         }
     }
     @IBOutlet weak var locationTxtFld: DesignableTextField! {
         didSet {
             locationTxtFld.delegate = self
+            locationTxtFld.addTarget(self, action: #selector(handleTextChanged), for: .editingChanged)
         }
     }
     @IBOutlet weak var pwdTxtFld: DesignableTextField! {
         didSet {
             pwdTxtFld.delegate = self
+            pwdTxtFld.addTarget(self, action: #selector(handleTextChanged), for: .editingChanged)
         }
     }
     
     @IBOutlet weak var registerBtn: DesignableButton!
     @IBOutlet weak var stackTxtFld: UIStackView!
+    let registrationViewModel = RegistrationViewModel()
+    var gender: Bool = false
     
     fileprivate var alertStyle: UIAlertController.Style = .actionSheet
     
@@ -53,12 +61,37 @@ class SignViewController: UIViewController {
         initialize()
         setupNotificationObserver()
         setupTapGesture()
+        setupRegistrationViewModelObserver()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 //        You will have a retain cycle
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    fileprivate func setupRegistrationViewModelObserver() {
+        registrationViewModel.isFormValidObserver = { (isFormValid) in
+            print("Is it valid?", isFormValid)
+//            Can disable the register button then re-enable it afterward
+        }
+    }
+    
+    @objc fileprivate func handleTextChanged(textField: UITextField) {
+        switch textField.tag {
+        case 0:
+            registrationViewModel.fullName = textField.text
+        case 1:
+            registrationViewModel.dob = textField.text
+        case 2:
+            registrationViewModel.gender = textField.text
+        case 3:
+            registrationViewModel.interestedIn = textField.text
+        case 4:
+            registrationViewModel.location = textField.text
+        default:
+            ()
+        }
     }
     
     fileprivate func setupTapGesture() {
@@ -105,6 +138,7 @@ class SignViewController: UIViewController {
 // MARK:- TextField
 
 extension SignViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -118,10 +152,12 @@ extension SignViewController: UITextFieldDelegate {
             return false
         case 2:
             self.view.endEditing(true)
+            gender = true
             genderAndInterestedIn(title:"Gender", message: "Select your gender")
             return false
         case 3:
             self.view.endEditing(true)
+            gender = false
             genderAndInterestedIn(title: "Interested In", message: "Select the gender you are interested in")
             return false
         case 4:
@@ -148,16 +184,24 @@ extension SignViewController: UITextFieldDelegate {
         let alert = UIAlertController(title: title, message: message, preferredStyle: self.alertStyle)
         let pickerViewValues: [[String]] = [["Male","Female"]]
         let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: 0)
-
+        var selectedVal = 0
+        var selectedValText = ""
+        
         alert.addPickerView(values: pickerViewValues, initialSelection: pickerViewSelectedValue) { vc, picker, index, values in
-
-            DispatchQueue.main.async {
-                UIView.animate(withDuration: 1) {
-                    print(index.row)
-                }
-            }
+            selectedVal = index.row
         }
-        alert.addAction(title: "Done", style: .cancel)
+        alert.addAction(title: "Done", style: .cancel, handler: {(alert: UIAlertAction!) in
+            if selectedVal == 0 {
+                selectedValText = "Male"
+            }else {
+                selectedValText = "Female"
+            }
+            if self.gender == true {
+                self.genderTxtFld.text = selectedValText
+            }else {
+                self.interestedInTxtFld.text = selectedValText
+            }
+        })
         self.present(alert, animated: true, completion: nil)
     }
     

@@ -29,6 +29,7 @@
 		D38EC33621C7731500104E79 /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33521C7731500104E79 /* EditProfileTableViewCell.swift */; };
 		D38EC33821C7C59B00104E79 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33721C7C59B00104E79 /* User.swift */; };
 		D38EC33B21C8C2D700104E79 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33A21C8C2D700104E79 /* CardViewModel.swift */; };
+		D38EC34021CA72DE00104E79 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EC33F21CA72DE00104E79 /* RegistrationViewModel.swift */; };
 		D39B240221BE3D24006C738D /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B240121BE3D24006C738D /* GradientImageView.swift */; };
 		D39B24C521BFA5D2006C738D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39B24C721BFA5D2006C738D /* Localizable.strings */; };
 		D39B266821BFB180006C738D /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B25DF21BFB180006C738D /* Array+Extensions.swift */; };
@@ -195,6 +196,7 @@
 		D38EC33521C7731500104E79 /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		D38EC33721C7C59B00104E79 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D38EC33A21C8C2D700104E79 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		D38EC33F21CA72DE00104E79 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		D39B240121BE3D24006C738D /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientImageView.swift; path = "dating-app/Resources/Design/GradientImageView.swift"; sourceTree = SOURCE_ROOT; };
 		D39B24C121BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D39B24C221BFA5BE006C738D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				D38EC33A21C8C2D700104E79 /* CardViewModel.swift */,
+				D38EC33F21CA72DE00104E79 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1146,6 +1149,7 @@
 				D39B269521BFB180006C738D /* Bool.swift in Sources */,
 				4724CDAB21C5405000E568F4 /* HomeBottomControlsStackView.swift in Sources */,
 				47F0395921C60588006B71B9 /* EditProfileTableViewController.swift in Sources */,
+				D38EC34021CA72DE00104E79 /* RegistrationViewModel.swift in Sources */,
 				D39B268921BFB180006C738D /* GalleryItemsDataSource.swift in Sources */,
 				D39B268A21BFB180006C738D /* CALayer.swift in Sources */,
 				D39B26C021BFB180006C738D /* AssetsCollection+ChangesObserver.swift in Sources */,
