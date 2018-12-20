@@ -6,11 +6,18 @@ target 'dating-app' do
   use_frameworks!
 
   # Pods for dating-app
+  # Firebase
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore’
+  pod 'Firebase/Auth’
+  pod 'Firebase/Storage’
+  pod 'SDWebImage'
+  pod 'JGProgressHUD'
+  
+  # Facebook
   pod 'FBSDKCoreKit'
   pod 'FBSDKShareKit'
   pod 'FBSDKLoginKit'
-  pod 'RAMAnimatedTabBarController'
 
   target 'dating-appTests' do
     inherit! :search_paths
