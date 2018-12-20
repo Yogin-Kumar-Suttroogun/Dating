@@ -169,13 +169,14 @@ extension SignViewController: UITextFieldDelegate {
         }
     }
     func dob() {
+        var dateStr: String = ""
         let alert = UIAlertController(title: "Date", message: "Select your date of birth", preferredStyle: self.alertStyle)
         alert.addDatePicker(mode: .date, date: Date(), minimumDate: nil, maximumDate: nil) { date in
-            Log(date.dateString())
+            dateStr = date.dateString()
         }
         alert.addAction(title: "Done", style: .cancel, handler: {(alert: UIAlertAction!) in
 //            When button done is clicked then perform saving
-            print("Done clicked!")
+            self.dobTxtFld.text = dateStr
         })
         self.present(alert, animated: true, completion: nil)
     }
@@ -207,7 +208,10 @@ extension SignViewController: UITextFieldDelegate {
     
     func location() {
         let alert = UIAlertController(style: self.alertStyle)
-        alert.addLocalePicker(type: .country) { info in Log(info) }
+        alert.addLocalePicker(type: .country) { info in
+            Log(info?.currencyCode)
+            self.locationTxtFld.text = info?.country
+        }
         alert.addAction(title: "Cancel", style: .cancel)
         self.present(alert, animated: true, completion: nil)
     }
